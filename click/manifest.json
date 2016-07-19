@@ -1,6 +1,6 @@
 {
     "name": "switch.timsueberkrueb",
-    "description": "A simple game about linear equatations",
+    "description": "A simple game about linear equations",
     "architecture": "@CLICK_ARCH@",
     "title": "switch",
     "hooks": {
