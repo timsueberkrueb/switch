@@ -1,0 +1,15 @@
+{
+    "name": "switch.timsueberkrueb",
+    "description": "A simple game about linear equatations",
+    "architecture": "@CLICK_ARCH@",
+    "title": "switch",
+    "hooks": {
+        "switch.timsueberkrueb": {
+            "apparmor": "switch.timsueberkrueb.apparmor",
+            "desktop": "switch.timsueberkrueb.desktop"
+        }
+    },
+    "version": "0.1",
+    "maintainer": "Tim Süberkrüb <tim.sueberkrueb@web.de>",
+    "framework": "ubuntu-sdk-15.04.6"
+}

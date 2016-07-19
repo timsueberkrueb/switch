@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Main.qml</file>
+        <file>ActionField.qml</file>
+        <file>Matrix.qml</file>
+        <file>MatrixArgument.qml</file>
+        <file>MatrixRow.qml</file>
+        <file>MatrixWidget.qml</file>
+        <file>MultiplyActionField.qml</file>
+        <file>MatrixHeader.qml</file>
+        <file>qmldir</file>
+        <file>LevelPage.qml</file>
+        <file>SolveWidget.qml</file>
+        <file>SuccessOverlay.qml</file>
+        <file>Overlay.qml</file>
+        <file>FailureOverlay.qml</file>
+        <file>Game.qml</file>
+        <file>MainPage.qml</file>
+        <file>LevelModel.qml</file>
+        <file>StatsPage.qml</file>
+        <file>AboutPage.qml</file>
+        <file>HelpPage.qml</file>
+    </qresource>
+</RCC>

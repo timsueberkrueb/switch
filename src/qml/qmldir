@@ -1,0 +1,3 @@
+module switch
+singleton Matrix 0.1 Matrix.qml
+singleton Game 0.1 Game.qml

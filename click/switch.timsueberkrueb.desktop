@@ -1,0 +1,7 @@
+[Desktop Entry]
+Name=switch.timsueberkrueb
+Exec=switch.timsueberkrueb
+Icon=icon.png
+Terminal=false
+Type=Application
+X-Ubuntu-Touch=true
