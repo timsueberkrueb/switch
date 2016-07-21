@@ -54,7 +54,7 @@ ListModel {
         solutionsMax: 10
         multiplierMax: 4
         scoreBonus: 5
-        scoreRequired: 20
+        scoreRequired: 25
     }
     ListElement {
         title: "Switch"
@@ -65,7 +65,7 @@ ListModel {
         solutionsMax: 7
         multiplierMax: 4
         scoreBonus: 6
-        scoreRequired: 25
+        scoreRequired: 35
     }
     ListElement {
         title: "Morpheus"
@@ -76,7 +76,7 @@ ListModel {
         solutionsMax: 10
         multiplierMax: 4
         scoreBonus: 7
-        scoreRequired: 30
+        scoreRequired: 45
     }
     ListElement {
         title: "Agent Smith"
@@ -87,7 +87,7 @@ ListModel {
         solutionsMax: 10
         multiplierMax: 4
         scoreBonus: 8
-        scoreRequired: 35
+        scoreRequired: 55
     }
     ListElement {
         title: "Neo"
@@ -98,7 +98,7 @@ ListModel {
         solutionsMax: 10
         multiplierMax: 5
         scoreBonus: 9
-        scoreRequired: 40
+        scoreRequired: 70
     }
     ListElement {
         title: "Oracle"
@@ -109,6 +109,6 @@ ListModel {
         solutionsMax: 10
         multiplierMax: 5
         scoreBonus: 10
-        scoreRequired: 45
+        scoreRequired: 90
     }
 }
