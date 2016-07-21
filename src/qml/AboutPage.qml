@@ -37,6 +37,22 @@ Page {
                     fontSize: "large"
                 }
 
+                UbuntuShape {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    width: units.dp(64)
+                    height: units.dp(64)
+                    source: Image {
+                        source: "icon.png"
+                    }
+                }
+
+                Label {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    text: "A simple game about linear equations"
+                }
+
+                Item { height: units.gu(2); width: parent.width }   // Spacer
+
                 Label {
                     text: "Source code available on <a href='https://github.com/tim-sueberkrueb/switch'>GitHub</a>."
                     width: parent.width
