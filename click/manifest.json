@@ -2,7 +2,7 @@
     "name": "switch.timsueberkrueb",
     "description": "A simple game about linear equations",
     "architecture": "@CLICK_ARCH@",
-    "title": "switch",
+    "title": "Switch",
     "hooks": {
         "switch.timsueberkrueb": {
             "apparmor": "switch.timsueberkrueb.apparmor",
