@@ -26,7 +26,7 @@ Page {
         }
 
         Label {
-            text: "Matrix solved: %1".arg(Game.statistics.successCount)
+            text: "Matrices solved: %1".arg(Game.statistics.successCount)
         }
 
         Label {
