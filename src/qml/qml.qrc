@@ -20,5 +20,6 @@
         <file>StatsPage.qml</file>
         <file>AboutPage.qml</file>
         <file>HelpPage.qml</file>
+        <file alias="icon.png">../../icon.png</file>
     </qresource>
 </RCC>
