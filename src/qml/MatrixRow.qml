@@ -14,6 +14,7 @@ Item {
         id: content
 
         property alias rowModel: matrixRow.rowModel
+        property bool hoveringDropArea: false
 
         height: units.dp(32)
         width: row.childrenRect.width
@@ -21,21 +22,6 @@ Item {
         anchors {
             left: parent.left
             verticalCenter: parent.verticalCenter
-        }
-
-        Row {
-            id: row
-            anchors.fill: parent
-            spacing: units.dp(8)
-
-            Repeater {
-                model: matrixRow.rowModel
-                delegate: MatrixArgument {
-                    text: matrixRow.rowModel[index]
-                    highlight:  index === matrixRow.rowModel.length-1
-                    glowing: dropArea.containsDrag
-                }
-            }
         }
 
         states: [
@@ -54,6 +40,47 @@ Item {
         ]
 
         Drag.active: dragArea.drag.active
+
+        Row {
+            id: row
+            anchors.fill: parent
+            spacing: units.dp(8)
+
+            Repeater {
+                model: matrixRow.rowModel
+                delegate: MatrixArgument {
+                    text: matrixRow.rowModel[index]
+                    highlight:  index === matrixRow.rowModel.length-1
+                    glowing: dropArea.containsDrag
+                }
+            }
+        }
+
+        Rectangle {
+            anchors {
+                right: parent.left
+                rightMargin: units.dp(16)
+                verticalCenter: parent.verticalCenter
+            }
+            opacity: content.hoveringDropArea ? 1 : 0
+            width: units.dp(32)
+            height: units.dp(32)
+            color: accentColor
+            radius: width * 0.5
+
+            Label {
+                anchors.centerIn: parent
+                color: "white"
+                text: "+"
+            }
+
+            Behavior on opacity {
+                NumberAnimation {
+                    duration: 200
+                    easing.type: Easing.InOutQuad
+                }
+            }
+        }
     }
 
     MouseArea {
@@ -107,10 +134,16 @@ Item {
         anchors.fill: parent
 
         onEntered: {
-            drag.accept(Qt.CopyAction)
+            drag.source.hoveringDropArea = drag.source !== content;
+            drag.accept(Qt.CopyAction);
+        }
+
+        onExited: {
+            drag.source.hoveringDropArea = false;
         }
 
         onDropped: {
+            drag.source.hoveringDropArea = false;
             if (drop.source != content) {
                 rowModel = Matrix.addRowToRow(drop.source.rowModel, rowModel);
             }
