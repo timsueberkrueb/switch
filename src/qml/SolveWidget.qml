@@ -7,6 +7,7 @@ Item {
     property var solutions
     property var inputSolutions: []
     property int padding: 16
+    property bool hideButtonVisible: true
 
     function setSolutions(solutions) {
         solveWidget.solutions = solutions;
@@ -99,6 +100,7 @@ Item {
             }
 
             Button {
+                visible: hideButtonVisible
                 text: "Hide"
                 color: themeColor
                 onClicked: {

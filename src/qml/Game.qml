@@ -8,6 +8,7 @@ QtObject {
     property ListModel levelModel: LevelModel {}
 
     property int score: 0
+    property bool firstStart: true
 
     property QtObject statistics: QtObject {
         id: statistics
@@ -26,5 +27,6 @@ QtObject {
     property var settings: Settings {
         category: "main"
         property alias score: game.score
+        property alias firstStart: game.firstStart
     }
 }

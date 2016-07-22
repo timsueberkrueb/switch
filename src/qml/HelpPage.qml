@@ -106,6 +106,14 @@ Page {
                         Qt.openUrlExternally(link);
                     }
                 }
+
+                Button {
+                    text: "Show the tutorial"
+                    color: UbuntuColors.green
+                    onClicked: {
+                        pageStack.push(tutorialPage);
+                    }
+                }
             }
         }
     }

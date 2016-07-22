@@ -46,8 +46,16 @@ MainView {
             id: aboutPage
         }
 
+        TutorialPage {
+            id: tutorialPage
+        }
+
         Component.onCompleted: {
-            push(mainPage)
+            push(mainPage);
+            if (Game.firstStart) {
+                push(tutorialPage);
+                Game.firstStart = false;
+            }
         }
     }
 }
