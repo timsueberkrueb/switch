@@ -68,6 +68,35 @@ Page {
                     width: parent.width
                     wrapMode: Text.WordWrap
                 }
+
+                Row {
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    spacing: units.dp(8)
+
+                    Button {
+                        text: "★ Rate"
+                        color: UbuntuColors.green
+                        onClicked: {
+                            Qt.openUrlExternally("scope://com.canonical.scopes.clickstore?q=Switch")
+                        }
+                    }
+
+                    Button {
+                        text: "🐞 Report bug"
+                        color: UbuntuColors.red
+                        onClicked: {
+                            Qt.openUrlExternally("https://github.com/tim-sueberkrueb/switch/issues/new");
+                        }
+                    }
+
+                    Button {
+                        text: "♥ Contribute"
+                        color: UbuntuColors.darkAubergine
+                        onClicked: {
+                            Qt.openUrlExternally("https://github.com/tim-sueberkrueb/switch");
+                        }
+                    }
+                }
             }
         }
     }
