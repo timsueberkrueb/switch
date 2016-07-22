@@ -83,7 +83,7 @@ Page {
 
                     Button {
                         text: "🐞 Report bug"
-                        color: UbuntuColors.red
+                        color: UbuntuColors.orange
                         onClicked: {
                             Qt.openUrlExternally("https://github.com/tim-sueberkrueb/switch/issues/new");
                         }
