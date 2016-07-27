@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>img/tutorial/matrix_example_01.svg</file>
+        <file>img/tutorial/matrix_example_02.svg</file>
+        <file>img/tutorial/matrix_example_03.svg</file>
+    </qresource>
+</RCC>

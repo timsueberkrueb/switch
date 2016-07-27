@@ -3,11 +3,12 @@ TARGET = switch.timsueberkrueb
 
 load(ubuntu-click)
 
-QT += qml quick
+QT += qml quick xml svg
 
 SOURCES += src/main.cpp
 
-RESOURCES += src/qml/qml.qrc
+RESOURCES += src/qml/qml.qrc \
+    media/media.qrc
 
 QML_FILES += $$files(*.qml,true) \
              $$files(*.js,true)

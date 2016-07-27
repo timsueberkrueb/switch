@@ -88,10 +88,21 @@ Page {
                     text: ("The matrices in Switch are matrices of coefficients of associated systems of linear equations. Consider the following linear system: <br/>" +
                            "1) 1x + 1y = 3 <br/>" +
                            "2) 1x - 1y = 1 <br/>" +
-                           "Now we're removing all the clutter ... <br/>" +
-                           "[1 1 3]<br/>" +
-                           "[1 -1 1]<br/>" +
-                           "... and we get a matrix form like the one above.")
+                           "Now we're removing all the clutter ... <br/>")
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                }
+
+                Image {
+                    source: "img/tutorial/matrix_example_01.svg"
+                    transform: Scale {
+                        xScale: 0.75
+                        yScale: 0.75
+                    }
+                }
+
+                Label {
+                    text: "... and we get a matrix form like the one above."
                     width: parent.width
                     wrapMode: Text.WordWrap
                 }
@@ -121,24 +132,74 @@ Page {
 
                 Label {
                     text: ("There are multiple ways to solve a system of linear equations. " +
-                           "In Switch you will use Gaussian elimination, also known as row reduction. "+
+                           "In Switch you will use <a href='https://en.wikipedia.org/wiki/Gaussian_elimination'>Gaussian elimination</a>, also known as row reduction. "+
                            "Using the Gaussian elimination algorithm you can perform several actions on a matrix of coefficients. " +
-                           "Those actions are called row operations. In switch you are able to ... <br/>" +
+                           "Those actions are called row operations. In Switch you are able to ... <br/>" +
                            "... multiply a row by a number<br/>" +
                            "... add one row to another<br/>" +
-                           "The goal of all this is to eliminate variables by setting the coefficient to zero. Remember our example: <br/>" +
-                           "[1 1 3]<br/>" +
-                           "[1 -1 1]<br/>" +
-                           "To solve this matrix, we would like to eliminate the x variable from the second row. To achieve this, we'll multiply the first row by -1 " +
-                           "and add it to the second row. The result:<br/>" +
-                           "[-1 -1 -3]<br/>" +
-                           "[0 -2 -2]<br/>" +
-                           "In this simple case, this was the only step needed to solve the system: <br/>" +
+                           "The goal of all this is to eliminate variables by setting the coefficient to zero. Remember our example: <br/>")
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                    linkColor: UbuntuColors.orange
+                    onLinkActivated: Qt.openUrlExternally(link)
+                }
+
+                Image {
+                    source: "img/tutorial/matrix_example_01.svg"
+                    transform: Scale {
+                        xScale: 0.75
+                        yScale: 0.75
+                    }
+                }
+
+                Label {
+                    text: ("To solve this matrix, we would like to eliminate the x variable from the second row. To achieve this, we'll multiply the first row by -1 " +
+                           "and add it to the second row. The result:<br/>")
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                }
+
+                Image {
+                    source: "img/tutorial/matrix_example_02.svg"
+                    transform: Scale {
+                        xScale: 0.75
+                        yScale: 0.75
+                    }
+                }
+
+                Label {
+                    text: ("In this simple case, this was the only step needed to solve the system. <br/>" +
+                           "Our matrix is transformed into upper <a href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a>. " +
+                           "We can now finish solving the matrix in your head:<br/>" +
                            "1) -1x -1y = -3 <br/>" +
                            "2) -2x = -2 <br/>" +
                            "Therefore: x = 2, y = 1")
                     width: parent.width
                     wrapMode: Text.WordWrap
+                    linkColor: UbuntuColors.orange
+                    onLinkActivated: Qt.openUrlExternally(link)
+                }
+
+                Label {
+                    text: "Alternatively we can continue to simplify the matrix using the row operations ..."
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                }
+
+                Image {
+                    source: "img/tutorial/matrix_example_03.svg"
+                    transform: Scale {
+                        xScale: 0.75
+                        yScale: 0.75
+                    }
+                }
+
+                Label {
+                    text: " ... until we end up with the so called reduced <a href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>."
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                    linkColor: UbuntuColors.orange
+                    onLinkActivated: Qt.openUrlExternally(link)
                 }
             }
         },

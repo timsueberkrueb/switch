@@ -21,16 +21,30 @@ Rectangle {
     implicitHeight: units.dp(48)
     color: themeColor
 
-    Label {
+    Rectangle {
         anchors {
             left: parent.left
             verticalCenter: parent.verticalCenter
             margins: units.dp(16)
         }
+        height: units.dp(32)
+        width: height
+        radius: width * 0.5
+        color: "white"
         enabled: canGoPrevious
-        text: "<a href='#'>Back</a>"
-        linkColor: "white"
-        onLinkActivated: goPrevious()
+
+        Icon {
+            anchors.centerIn: parent
+            name: "back"
+            color: canGoPrevious ? UbuntuColors.warmGrey : UbuntuColors.lightGrey
+            width: units.dp(16)
+            height: width
+        }
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: goPrevious()
+        }
     }
 
     Row {
@@ -73,15 +87,29 @@ Rectangle {
         }
     }
 
-    Label {
+    Rectangle {
         anchors {
             right: parent.right
             verticalCenter: parent.verticalCenter
             margins: units.dp(16)
         }
+        height: units.dp(32)
+        width: height
+        radius: width * 0.5
+        color: "white"
         enabled: canGoNext
-        text: "<a href='#'>Next</a>"
-        linkColor: "white"
-        onLinkActivated: goNext()
+
+        Icon {
+            anchors.centerIn: parent
+            name: "go-next"
+            color: canGoNext ? UbuntuColors.warmGrey : UbuntuColors.lightGrey
+            width: units.dp(16)
+            height: width
+        }
+
+        MouseArea {
+            anchors.fill: parent
+            onClicked: goNext()
+        }
     }
 }

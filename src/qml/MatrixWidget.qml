@@ -9,7 +9,7 @@ Item {
     property int padding: units.dp(32)
 
     width: childrenRect.width + padding * 2
-    height: childrenRect.height + padding * 2
+    height: childrenRect.height
 
     Row {
         id: row
