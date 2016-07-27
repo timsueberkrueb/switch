@@ -129,7 +129,7 @@ Page {
                            "The goal of all this is to eliminate variables by setting the coefficient to zero. Remember our example: <br/>" +
                            "[1 1 3]<br/>" +
                            "[1 -1 1]<br/>" +
-                           "To solve this matrix, we would like to eliminate the x variable from the second row. To archieve this, we'll multiply the first row by -1 " +
+                           "To solve this matrix, we would like to eliminate the x variable from the second row. To achieve this, we'll multiply the first row by -1 " +
                            "and add it to the second row. The result:<br/>" +
                            "[-1 -1 -3]<br/>" +
                            "[0 -2 -2]<br/>" +
