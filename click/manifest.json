@@ -11,5 +11,5 @@
     },
     "version": "0.1",
     "maintainer": "Tim Süberkrüb <tim.sueberkrueb@web.de>",
-    "framework": "ubuntu-sdk-15.04.6"
+    "framework": "ubuntu-sdk-15.04.4"
 }
