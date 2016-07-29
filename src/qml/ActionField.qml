@@ -9,12 +9,15 @@ Item {
     property int padding: units.dp(16)
     property int duration: 1000
     property color color: accentColor
+    property bool mouseAreaEnabled: true
 
     readonly property double progress: progressTimer.elapsed / progressTimer.duration
 
     signal entered(var drag)
     signal exited(var drag)
     signal dropped(var drag)
+    signal pressed()
+    signal released()
     signal triggered()
 
     onProgressChanged: {
@@ -63,17 +66,37 @@ Item {
         }
     }
 
+    MouseArea {
+        anchors.fill: parent
+
+        enabled: mouseAreaEnabled
+
+        onPressed: {
+            progressTimer.start();
+            actionField.pressed();
+        }
+
+        onReleased: {
+            progressTimer.stop();
+            progressTimer.elapsed = 0;
+            actionField.released();
+        }
+    }
+
     DropArea {
         anchors.fill: parent
+
         onEntered: {
             progressTimer.start();
             actionField.entered(drag);
         }
+
         onExited: {
             progressTimer.stop();
             progressTimer.elapsed = 0;
             actionField.exited(drag);
         }
+
         onDropped: {
             progressTimer.stop();
             progressTimer.elapsed = 0;

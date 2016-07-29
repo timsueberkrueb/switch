@@ -7,6 +7,7 @@ Item {
     property alias text: t.text
     property bool highlight: false
     property bool glowing: false
+    property color glowColor: accentColor
 
     implicitHeight: units.dp(32)
     implicitWidth: units.dp(32)
@@ -17,7 +18,7 @@ Item {
         opacity: glowing ? 1 : 0
         glowRadius: 2
         spread: 0.2
-        color: accentColor
+        color: glowColor
         cornerRadius: rect.radius + glowRadius
 
         Behavior on opacity {
@@ -33,7 +34,7 @@ Item {
 
         anchors.fill: parent
 
-        radius: 5
+        radius: units.dp(5)
         clip: true
         gradient: Gradient {
            GradientStop { position: 0.0; color: highlight ? themeColor : "#f2f2f2" }

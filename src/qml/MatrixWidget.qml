@@ -12,7 +12,6 @@ Item {
     height: childrenRect.height
 
     Row {
-        id: row
         x: padding
         y: padding
         spacing: units.dp(8)
@@ -26,11 +25,13 @@ Item {
                 MultiplyActionField {
                     id: actionFieldMultiplyPositive
                     mode: postive
+                    selectedRow: matrixContainer.selectedRow
                 }
 
                 MultiplyActionField {
                     id: actionFieldMultiplyNegative
                     mode: negative
+                    selectedRow: matrixContainer.selectedRow
                 }
             }
         }
@@ -40,6 +41,9 @@ Item {
             width: matrixColumn.width
             height: matrixColumn.height
 
+            property int selectedIndex: -1
+            property var selectedRow
+
             Column {
                 id: matrixColumn
                 spacing: units.dp(8)
@@ -47,7 +51,13 @@ Item {
                 Repeater {
                     model: matrix;
                     delegate: MatrixRow {
+                        id: matrixRow
                         rowModel: matrix[index]
+                        isSelected: matrixContainer.selectedIndex == index;
+                        onSelected: {
+                            matrixContainer.selectedIndex = index;
+                            matrixContainer.selectedRow = matrixRow;
+                        }
                     }
                 }
             }

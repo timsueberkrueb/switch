@@ -6,14 +6,19 @@ Item {
     id: matrixRow
 
     property var rowModel: []
+    property bool isSelected: false
+    property int currentMultiplier: 0
+
+    signal selected()
 
     height: units.dp(48)
-    width: content.width + divideHelper.width + units.dp(16)
+    width: content.width + appendix.width + units.dp(16)
 
     Item {
         id: content
 
         property alias rowModel: matrixRow.rowModel
+        property alias currentMultiplier: matrixRow.currentMultiplier
         property bool hoveringDropArea: false
 
         height: units.dp(32)
@@ -51,7 +56,8 @@ Item {
                 delegate: MatrixArgument {
                     text: matrixRow.rowModel[index]
                     highlight:  index === matrixRow.rowModel.length-1
-                    glowing: dropArea.containsDrag
+                    glowing: dropArea.containsDrag || isSelected
+                    glowColor: dropArea.containsDrag ? accentColor : themeColor
                 }
             }
         }
@@ -81,6 +87,38 @@ Item {
                 }
             }
         }
+
+        Rectangle {
+            id: multiplyHint
+            anchors {
+                left: parent.right
+                leftMargin: units.dp(16)
+                verticalCenter: parent.verticalCenter
+            }
+
+            property int multiplier: (currentMultiplier > 0 ? (currentMultiplier == 1) ? 1 : (currentMultiplier - 1)
+                                                            : ((currentMultiplier < 0) ? ( (currentMultiplier == -1) ? -1 : (currentMultiplier + 1))
+                                                                                     : 1 ) )
+
+            width: units.dp(32)
+            height: units.dp(32)
+            opacity: currentMultiplier === 0 ? 0 : 1
+            color: accentColor
+            radius: width * 0.5
+
+            Label {
+                anchors.centerIn: parent
+                text: "× %1".arg(multiplyHint.multiplier).toString()
+                color: "white"
+            }
+
+            Behavior on opacity {
+                NumberAnimation {
+                    duration: 200
+                    easing.type: Easing.InOutQuad
+                }
+            }
+        }
     }
 
     MouseArea {
@@ -89,42 +127,52 @@ Item {
         drag.target: content
         drag.smoothed: true
         drag.axis: Drag.XAndYAxis
+
         onReleased: {
             content.Drag.drop()
         }
+
+        onPressed: {
+            matrixRow.selected();
+        }
     }
 
-    Rectangle {
-        id: divideHelper
+    Item {
+        id: appendix
+        width: units.dp(32)
+        height: units.dp(32)
         anchors {
             right: parent.right
             verticalCenter: parent.verticalCenter
         }
-        property int gcd: Matrix.gcdOfArray(rowModel)
-        property bool relevant: Math.abs(gcd) > 1
-        opacity: (relevant && !dragArea.drag.active) ? 1 : 0
-        width: units.dp(32)
-        height: units.dp(32)
-        color: accentColor
-        radius: width * 0.5
 
-        Label {
-            anchors.centerIn: parent
-            text: "÷ " + divideHelper.gcd
-            color: "white"
-        }
-
-        MouseArea {
+        Rectangle {
+            id: divideHelper
             anchors.fill: parent
-            onClicked: {
-                rowModel = Matrix.multiplyRow(rowModel, 1/divideHelper.gcd);
-            }
-        }
+            property int gcd: Matrix.gcdOfArray(rowModel)
+            property bool relevant: Math.abs(gcd) > 1
+            opacity: (relevant && !dragArea.drag.active && currentMultiplier === 0) ? 1 : 0
+            color: accentColor
+            radius: width * 0.5
 
-        Behavior on opacity {
-            NumberAnimation {
-                duration: 200
-                easing.type: Easing.InOutQuad
+            Label {
+                anchors.centerIn: parent
+                text: "÷ " + divideHelper.gcd
+                color: "white"
+            }
+
+            MouseArea {
+                anchors.fill: parent
+                onClicked: {
+                    rowModel = Matrix.multiplyRow(rowModel, 1/divideHelper.gcd);
+                }
+            }
+
+            Behavior on opacity {
+                NumberAnimation {
+                    duration: 200
+                    easing.type: Easing.InOutQuad
+                }
             }
         }
     }
