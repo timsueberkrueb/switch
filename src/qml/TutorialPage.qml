@@ -351,6 +351,14 @@ Page {
                 }
 
                 Label {
+                    text: ("<u>Hint:</u> The variables in Switch are called X1, X2, X3 ... XN (e.g. instead of x, y, z). " +
+                           "The reason for this is simply that there will be more than just 3 variables in the game and this " +
+                           "naming scheme is more consistent therefore.")
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                }
+
+                Label {
                     text: "No idea what to do? <a href='#'>Go back to the explanations</a>."
                     width: parent.width
                     wrapMode: Text.WordWrap
