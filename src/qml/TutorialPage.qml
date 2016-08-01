@@ -1,4 +1,5 @@
 import QtQuick 2.4
+import QtQuick.Layouts 1.1
 import Ubuntu.Components 1.3
 import Ubuntu.Components.Popups 1.3
 
@@ -208,7 +209,7 @@ Page {
                 spacing: units.dp(8)
 
                 Label {
-                    text: "And ... action!"
+                    text: "And ... action"
                     fontSize: "x-large"
                 }
 
@@ -220,11 +221,122 @@ Page {
 
                 Label {
                     text: ("Row operations:<br/>" +
+                           "<u>Add:</u><br/>" +
                            "• You can drag and drop a row onto another to add it<br/>" +
+                           "<u>Multiply</u><br/>" +
                            "• You can drag and drop a row on the '×1' or '×(-1)' action fields to multiply it by a factor <br/>" +
-                           "• By holding a row pressed over one of the action fields you can increase/decrease the value of the multiplicator<br/>")
+                           "• By holding a row pressed over one of the action fields you can increase/decrease the value of the multiplicator<br/>" +
+                           "<i>or</i><br/>" +
+                           "• Tap on a row to select it<br/>" +
+                           "• Press on the multiplier fields to multiply the selected row by a factor<br/>" +
+                           "• Hold pressed a multiplier field to increase/decrease the value of the mutliplicator<br/>")
                     width: parent.width
                     wrapMode: Text.WordWrap
+                }
+
+                Label {
+                    text: ("In Switch, there are two ways to solve a matrix:<br/>")
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                }
+
+                RowLayout {
+                    width: parent.width
+                    spacing: units.dp(16)
+
+                    Label {
+                        Layout.fillWidth: true
+                        text: ("1. Transform the matrix into upper <a href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a> "+
+                               "using the row operations. Click on the 'Solve' button when you think you know the solutions.<br/>" +
+                               "⊕ time efficient for small matrices<br/>" +
+                               "⊕ train your mental arithmetic skills<br/>" +
+                               "⊖ difficult for bigger matrices<br/>" +
+                               "↳ recommended for smaller matrices")
+                        width: parent.width
+                        wrapMode: Text.WordWrap
+                        linkColor: UbuntuColors.orange
+                        onLinkActivated: Qt.openUrlExternally(link)
+                    }
+
+                    Image {
+                        sourceSize.width: 100
+                        source: "img/tutorial/matrix_example_02.svg"
+                    }
+                }
+
+                RowLayout {
+                    width: parent.width
+                    spacing: units.dp(16)
+
+                    Label {
+                        Layout.fillWidth: true
+                        text: ("2. Simplify the matrix as much as possible by using the row operations. "+
+                               "You will end up with the so called reduced <a href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a> " +
+                               "and Switch will detect that the matrix is sovled.<br/>" +
+                               "⊕ easy on the brain (no need for mental arithmetic)<br/>" +
+                               "⊖ wastefully time consuming for smaller matrices<br/>" +
+                               "↳ recommended for big matrices")
+                        width: parent.width
+                        wrapMode: Text.WordWrap
+                        linkColor: UbuntuColors.orange
+                        onLinkActivated: Qt.openUrlExternally(link)
+                    }
+
+                    Image {
+                        sourceSize.width: 100
+                        source: "img/tutorial/matrix_example_03.svg"
+                    }
+                }
+
+                Item { height: units.gu(2); width: parent.width }   // Spacer
+
+                Label {
+                    id: labelNeoQuote
+                    anchors.horizontalCenter: parent.horizontalCenter
+                    text: "”The problem is choice.”"
+                    width: Math.min(parent.width, metrics.width)
+                    wrapMode: Text.WordWrap
+                    fontSize: "large"
+
+                    TextMetrics {
+                        id: metrics
+                        text: labelNeoQuote.text
+                        font: labelNeoQuote.font
+                    }
+                }
+
+                Label {
+                    anchors.right: parent.right
+                    anchors.rightMargin: units.dp(16)
+                    text: "– <i>Neo</i>"
+                }
+            }
+        },
+        Component {
+            Column {
+                spacing: units.dp(8)
+
+                Label {
+                    text: "Let's go"
+                    fontSize: "x-large"
+                }
+
+                Label {
+                    text: "I think it's time to try it yourself."
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                }
+
+
+                Label {
+                    text: ("As soon as you think you got it, you can <a href='#'>check your solution</a>. "+
+                           "Or, alternatively, simplify it to the very end and Switch will handle the rest.")
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                    linkColor: UbuntuColors.orange
+                    onLinkActivated: {
+                        PopupUtils.open(solveDialogComponent);
+                    }
                 }
 
                 MatrixWidget {
@@ -233,20 +345,37 @@ Page {
                         [1, 1, 3],
                         [1, -1, 1]
                     ]
-                }
-
-                Label {
-                    text: "Ready? Check your solution!"
-                }
-
-                SolveWidget {
-                    hideButtonVisible: false
-                    solutions: [2, 1]
                     onSolved: {
                         PopupUtils.open(successDialogComponent);
                     }
-                    onFailed: {
-                        PopupUtils.open(failureDialogComponent);
+                }
+
+                Label {
+                    text: "No idea what to do? <a href='#'>Go back to the explanations</a>."
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                    linkColor: UbuntuColors.orange
+                    onLinkActivated: {
+                        tutorialSectionSelect.selectedIndex--;
+                    }
+                }
+
+                Component {
+                    id: solveDialogComponent
+                    Dialog {
+                        id: dialog
+                        SolveWidget {
+                            solutions: [2, 1]
+                            onSolved: {
+                                dialog.hide();
+                                PopupUtils.open(successDialogComponent);
+                            }
+                            onFailed: {
+                                dialog.hide();
+                                PopupUtils.open(failureDialogComponent);
+                            }
+                            onHideRequested: dialog.hide();
+                        }
                     }
                 }
 
@@ -314,8 +443,8 @@ Page {
                 id: loader
                 width: parent.width
                 sourceComponent: tutorialSections[tutorialSectionSelect.selectedIndex]
+                onSourceComponentChanged: flickable.contentY = 0;
             }
-
         }
     }
 
