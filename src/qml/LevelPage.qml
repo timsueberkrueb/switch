@@ -19,6 +19,19 @@ Page {
         return str
     }
 
+    function matrixSolved() {
+        Game.statistics.successCount++;
+        if (level.index === Game.currentLevelIndex && Game.currentStars < 5)
+            Game.currentStars++;
+        if (level.index === Game.currentLevelIndex && Game.currentStars === 5
+            && Game.currentLevelIndex === Game.levelModel.count - 1) {
+            gameCompletedOverlay.show();
+        }
+        else {
+            successOverlay.show();
+        }
+    }
+
     header: MatrixHeader {
         title: "Level '%1'".arg(level.title)
         leadingActionBar.actions: [
@@ -69,6 +82,7 @@ Page {
             id: matrixWidget
             y: units.dp(16)
             anchors.horizontalCenter: parent.horizontalCenter
+            onSolved: matrixSolved()
         }
 
         Rectangle {
@@ -101,16 +115,7 @@ Page {
                     id: solveWidget
                     visible: bottomPanel.solving
                     onSolved: {
-                        Game.statistics.successCount++;
-                        if (level.index === Game.currentLevelIndex && Game.currentStars < 5)
-                            Game.currentStars++;
-                        if (level.index === Game.currentLevelIndex && Game.currentStars === 5
-                            && Game.currentLevelIndex === Game.levelModel.count - 1) {
-                            gameCompletedOverlay.show();
-                        }
-                        else {
-                            successOverlay.show();
-                        }
+                        matrixSolved();
                     }
                     onFailed: {
                         failureOverlay.wrongSolution = solutionToString(wrongSolutions);

@@ -7,6 +7,23 @@ Item {
 
     property var rowModel: []
     property bool isSelected: false
+    property bool isRowCanonicalForm: {
+        var canonical = false;
+        for (var i=0; i<rowModel.length-1; i++) {
+            if (rowModel[i] === 1 || rowModel[i] === -1) {
+                if (canonical) {
+                    canonical = false;
+                    break;
+                }
+                canonical = true;
+            }
+            else if (rowModel[i] !== 0) {
+                canonical = false;
+                break;
+            }
+        }
+        return canonical;
+    }
     property int currentMultiplier: 0
 
     signal selected()
