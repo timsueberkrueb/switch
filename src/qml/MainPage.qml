@@ -25,11 +25,6 @@ Page {
                 Layout.fillWidth: true
                 height: 1
             }
-
-            Label {
-                text: "Score: %1".arg(Game.score)
-                color: "white"
-            }
         }
         trailingActionBar.actions: [
             Action {
@@ -73,7 +68,7 @@ Page {
             }
             model: Game.levelModel
             delegate: ListItem {              
-                property bool locked: model.scoreRequired > Game.score
+                property bool locked: index > Game.currentLevelIndex
 
                 enabled: !locked
                 width: parent.width
@@ -112,13 +107,22 @@ Page {
                             anchors.fill: parent
                             spacing: units.dp(8)
 
-                            Label {
-                                text: locked ? "🔒 Locked" : model.title
-                                fontSize: "large"
+                            RowLayout {
+                                width: parent.width
+
+                                Label {
+                                    Layout.fillWidth: true
+                                    text: locked ? "🔒 Locked" : model.title
+                                    fontSize: "large"
+                                }
+
+                                StarsLabel {
+                                    levelIndex: index
+                                }
                             }
 
                             Label {
-                                text: locked ? "Earn %1 more points to unlock".arg(model.scoreRequired-Game.score) : model.description
+                                text: locked ? "Earn all stars in previous levels to unlock." : model.description
                                 width: parent.width
                                 elide: Text.ElideRight
                             }

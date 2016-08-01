@@ -23,5 +23,6 @@
         <file alias="icon.png">../../icon.png</file>
         <file>TutorialPage.qml</file>
         <file>TutorialSectionSelect.qml</file>
+        <file>StarsLabel.qml</file>
     </qresource>
 </RCC>

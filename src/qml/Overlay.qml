@@ -6,6 +6,7 @@ FocusScope {
     property bool showing: false
 
     function show(){
+        overlay.forceActiveFocus();
         showing = true;
     }
 
@@ -34,6 +35,10 @@ FocusScope {
         enabled: showing
         anchors.fill: parent
         onClicked: overlay.clicked()
+    }
+
+    Keys.onPressed: {
+        overlay.clicked();
     }
 }
 

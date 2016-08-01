@@ -7,6 +7,7 @@ import "."
 Page {
     property var level
     signal completed()
+    signal surrendered()
 
     function solutionToString(solution) {
         var str = ""
@@ -26,7 +27,7 @@ Page {
                 text: "Back"
                 onTriggered: {
                     Game.statistics.surrenderCount++;
-                    completed();
+                    surrendered();
                 }
             }
         ]
@@ -48,8 +49,8 @@ Page {
                 height: 1
             }
 
-            Label {
-                text: "Score: %1".arg(Game.score)
+            StarsLabel {
+                levelIndex: level.index
                 color: "white"
             }
         }
@@ -101,8 +102,9 @@ Page {
                     visible: bottomPanel.solving
                     onSolved: {
                         successOverlay.show();
-                        Game.score += level.scoreBonus;
                         Game.statistics.successCount++;
+                        if (level.index === Game.currentLevelIndex)
+                            Game.currentStars++;
                     }
                     onFailed: {
                         failureOverlay.wrongSolution = solutionToString(wrongSolutions);
@@ -130,6 +132,8 @@ Page {
     SuccessOverlay {
         id: successOverlay
         anchors.fill: parent
+        levelIndex: level.index
+        levelName: level.title
         onClicked: {
             hide();
             completed();

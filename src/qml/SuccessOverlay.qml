@@ -3,6 +3,11 @@ import Ubuntu.Components 1.3
 import "."
 
 Overlay {
+    id: successOverlay
+
+    property string levelName
+    property int levelIndex
+
     color: themeColor
 
     Column {
@@ -25,18 +30,44 @@ Overlay {
             text: "Matrix solved."
             color: "white"
         }
+
+        Label {
+            anchors.horizontalCenter: parent.horizontalCenter
+            visible: levelIndex === Game.currentLevelIndex && Game.currentStars < 5
+            text: "Solve %1 more to complete the level.".arg(5 - Game.currentStars)
+            color: "white"
+        }
+
+        Label {
+            anchors.horizontalCenter: parent.horizontalCenter
+            visible: levelIndex === Game.currentLevelIndex && Game.currentStars === 5
+                     && Game.currentLevelIndex < Game.levelModel.count - 1
+            text: "<b>Level '%1' unlocked.</b>".arg(visible ? Game.levelModel.get(Game.currentLevelIndex+1).title : "")
+            color: "white"
+        }
     }
 
     Label {
         anchors {
             top: parent.top
+            left: parent.left
+            margins: units.dp(16)
+        }
+        text: levelName
+        color: "white"
+        fontSize: "large"
+    }
+
+    StarsLabel {
+        anchors {
+            top: parent.top
             right: parent.right
             margins: units.dp(16)
         }
-        text: "Score: %1".arg(Game.score)
+        levelIndex: successOverlay.levelIndex
         color: "white"
+        fontSize: "large"
     }
-
 
     Label {
         anchors {

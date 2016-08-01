@@ -9,8 +9,6 @@ ListModel {
         solutionsMin: -3
         solutionsMax: 3
         multiplierMax: 2
-        scoreBonus: 1
-        scoreRequired: 0
     }
     ListElement {
         title: "Mouse"
@@ -20,8 +18,6 @@ ListModel {
         solutionsMin: -5
         solutionsMax: 5
         multiplierMax: 2
-        scoreBonus: 2
-        scoreRequired: 5
     }
     ListElement {
         title: "Choi"
@@ -31,8 +27,6 @@ ListModel {
         solutionsMin: -10
         solutionsMax: 10
         multiplierMax: 3
-        scoreBonus: 3
-        scoreRequired: 10
     }
     ListElement {
         title: "Trinity"
@@ -42,8 +36,6 @@ ListModel {
         solutionsMin: -6
         solutionsMax: 6
         multiplierMax: 4
-        scoreBonus: 4
-        scoreRequired: 15
     }
     ListElement {
         title: "Cypher"
@@ -53,8 +45,6 @@ ListModel {
         solutionsMin: -10
         solutionsMax: 10
         multiplierMax: 4
-        scoreBonus: 5
-        scoreRequired: 25
     }
     ListElement {
         title: "Switch"
@@ -64,8 +54,6 @@ ListModel {
         solutionsMin: -7
         solutionsMax: 7
         multiplierMax: 4
-        scoreBonus: 6
-        scoreRequired: 35
     }
     ListElement {
         title: "Morpheus"
@@ -75,8 +63,6 @@ ListModel {
         solutionsMin: -10
         solutionsMax: 10
         multiplierMax: 4
-        scoreBonus: 7
-        scoreRequired: 45
     }
     ListElement {
         title: "Agent Smith"
@@ -86,8 +72,6 @@ ListModel {
         solutionsMin: -10
         solutionsMax: 10
         multiplierMax: 4
-        scoreBonus: 8
-        scoreRequired: 55
     }
     ListElement {
         title: "Neo"
@@ -97,8 +81,6 @@ ListModel {
         solutionsMin: -10
         solutionsMax: 10
         multiplierMax: 5
-        scoreBonus: 9
-        scoreRequired: 70
     }
     ListElement {
         title: "Oracle"
@@ -108,7 +90,5 @@ ListModel {
         solutionsMin: -10
         solutionsMax: 10
         multiplierMax: 5
-        scoreBonus: 10
-        scoreRequired: 90
     }
 }

@@ -30,6 +30,15 @@ MainView {
                 });
                 page.completed.connect(function(){
                     pageStack.pop(page);
+                    if (Game.currentStars < 5)
+                        levelSelected(level);
+                    else if (Game.currentLevelIndex < Game.levelModel.count - 1 && level.index === Game.currentLevelIndex) {
+                        Game.currentStars = 0;
+                        Game.currentLevelIndex++;
+                    }
+                });
+                page.surrendered.connect(function(){
+                    pageStack.pop(page);
                 });
             }
         }

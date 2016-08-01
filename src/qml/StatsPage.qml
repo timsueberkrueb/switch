@@ -21,11 +21,6 @@ Page {
         spacing: units.dp(8)
 
         Label {
-            text: "Score: %1".arg(Game.score)
-            fontSize: "x-large"
-        }
-
-        Label {
             text: "Matrices solved: %1".arg(Game.statistics.successCount)
         }
 
