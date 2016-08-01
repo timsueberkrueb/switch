@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.8101934"
-     inkscape:cx="78.54691"
-     inkscape:cy="-27.670899"
+     inkscape:cx="163.9142"
+     inkscape:cy="-38.879412"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -40,8 +40,8 @@
      objecttolerance="20"
      inkscape:window-width="1122"
      inkscape:window-height="743"
-     inkscape:window-x="461"
-     inkscape:window-y="90"
+     inkscape:window-x="824"
+     inkscape:window-y="453"
      inkscape:window-maximized="0"
      guidetolerance="20"
      inkscape:snap-grids="true"
@@ -54,7 +54,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -95,16 +95,16 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="231.78571"
+       x="225.709"
        y="196.18217"
        id="text4229"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4231"
-         x="231.78571"
+         x="225.709"
          y="196.18217">-3</tspan><tspan
          sodipodi:role="line"
-         x="231.78571"
+         x="225.709"
          y="246.18217"
          id="tspan4233" /></text>
     <text
@@ -117,7 +117,7 @@
          sodipodi:role="line"
          id="tspan4355"
          x="99.535728"
-         y="210.41763"> </tspan></text>
+         y="210.41763" /></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
@@ -132,14 +132,14 @@
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       x="236.6257"
-       y="246.65637"
+       x="224.74852"
+       y="247.2088"
        id="text4393"
        sodipodi:linespacing="125%"><tspan
          sodipodi:role="line"
          id="tspan4395"
-         x="236.6257"
-         y="246.65637">-2</tspan></text>
+         x="224.74852"
+         y="247.2088">-2</tspan></text>
     <flowRoot
        xml:space="preserve"
        id="flowRoot4397"
@@ -150,5 +150,5 @@
            height="161.86116"
            x="13.258252"
            y="-28.582521" /></flowRegion><flowPara
-         id="flowPara4403"></flowPara></flowRoot>  </g>
+         id="flowPara4403" /></flowRoot>  </g>
 </svg>
