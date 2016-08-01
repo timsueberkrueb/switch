@@ -3,6 +3,7 @@ import QtQuick 2.4
 FocusScope {
     id: overlay
     property color color
+    property bool mouseAreaEnabled: true
     property bool showing: false
 
     function show(){
@@ -18,10 +19,17 @@ FocusScope {
 
     z: 25
     opacity: showing ? 1 : 0
+    visible: opacity > 0
 
     Rectangle {
         anchors.fill: parent
         color: parent.color
+    }
+
+    MouseArea {
+        enabled: showing && mouseAreaEnabled
+        anchors.fill: parent
+        onClicked: overlay.clicked()
     }
 
     Behavior on opacity {
@@ -31,14 +39,9 @@ FocusScope {
         }
     }
 
-    MouseArea {
-        enabled: showing
-        anchors.fill: parent
-        onClicked: overlay.clicked()
-    }
-
     Keys.onPressed: {
-        overlay.clicked();
+        if (mouseAreaEnabled)
+            overlay.clicked();
     }
 }
 

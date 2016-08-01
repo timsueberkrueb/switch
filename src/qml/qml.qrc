@@ -24,5 +24,6 @@
         <file>TutorialPage.qml</file>
         <file>TutorialSectionSelect.qml</file>
         <file>StarsLabel.qml</file>
+        <file>GameCompletedOverlay.qml</file>
     </qresource>
 </RCC>

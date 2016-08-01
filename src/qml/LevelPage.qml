@@ -101,10 +101,16 @@ Page {
                     id: solveWidget
                     visible: bottomPanel.solving
                     onSolved: {
-                        successOverlay.show();
                         Game.statistics.successCount++;
-                        if (level.index === Game.currentLevelIndex)
+                        if (level.index === Game.currentLevelIndex && Game.currentStars < 5)
                             Game.currentStars++;
+                        if (level.index === Game.currentLevelIndex && Game.currentStars === 5
+                            && Game.currentLevelIndex === Game.levelModel.count - 1) {
+                            gameCompletedOverlay.show();
+                        }
+                        else {
+                            successOverlay.show();
+                        }
                     }
                     onFailed: {
                         failureOverlay.wrongSolution = solutionToString(wrongSolutions);
@@ -145,6 +151,15 @@ Page {
         anchors.fill: parent
         wrongSolution: ""
         rightSolution: ""
+        onClicked: {
+            hide();
+            completed();
+        }
+    }
+
+    GameCompletedOverlay {
+        id: gameCompletedOverlay
+        anchors.fill: parent
         onClicked: {
             hide();
             completed();
