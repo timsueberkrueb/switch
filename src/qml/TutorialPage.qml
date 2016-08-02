@@ -272,7 +272,7 @@ Page {
                         Layout.fillWidth: true
                         text: ("2. Simplify the matrix as much as possible by using the row operations. "+
                                "You will end up with the so called reduced <a href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a> " +
-                               "and Switch will detect that the matrix is sovled.<br/>" +
+                               "and Switch will detect that the matrix is solved.<br/>" +
                                "⊕ easy on the brain (no need for mental arithmetic)<br/>" +
                                "⊖ wastefully time consuming for smaller matrices<br/>" +
                                "↳ recommended for big matrices")
