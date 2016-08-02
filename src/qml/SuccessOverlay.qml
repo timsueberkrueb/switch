@@ -7,6 +7,7 @@ Overlay {
 
     property string levelName
     property int levelIndex
+    property string solution
 
     color: themeColor
 
@@ -28,6 +29,12 @@ Overlay {
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
             text: "Matrix solved."
+            color: "white"
+        }
+
+        Label {
+            anchors.horizontalCenter: parent.horizontalCenter
+            text: "Solution: %1".arg(solution)
             color: "white"
         }
 

@@ -4,8 +4,8 @@ import Ubuntu.Components 1.3
 Overlay {
     property string wrongSolution: ""
     property string rightSolution: ""
-    property int correctSolutionsCount: 0
-    property int overallSolutionsCount: 0
+    property int correctSolutionCount: 0
+    property int overallSolutionCount: 0
 
     property var motivativeSlogans: [
         "Nevermind, moving on!",
@@ -33,7 +33,7 @@ Overlay {
 
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: "%1/%2 solutions correct".arg(correctSolutionsCount).arg(overallSolutionsCount)
+            text: "%1/%2 correct".arg(correctSolutionCount).arg(overallSolutionCount)
             fontSize: "medium"
         }
 

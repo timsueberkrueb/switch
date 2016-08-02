@@ -118,10 +118,10 @@ Page {
                         matrixSolved();
                     }
                     onFailed: {
-                        failureOverlay.wrongSolution = solutionToString(wrongSolutions);
-                        failureOverlay.rightSolution = solutionToString(rightSolutions);
-                        failureOverlay.correctSolutionsCount = correctSolutionsCount;
-                        failureOverlay.overallSolutionsCount = rightSolutions.length;
+                        failureOverlay.wrongSolution = solutionToString(wrongSolution);
+                        failureOverlay.rightSolution = solutionToString(rightSolution);
+                        failureOverlay.correctSolutionCount = correctSolutionCount;
+                        failureOverlay.overallSolutionCount = rightSolution.length;
                         failureOverlay.show();
                         Game.statistics.failureCount++;
                     }
@@ -145,6 +145,7 @@ Page {
         anchors.fill: parent
         levelIndex: level.index
         levelName: level.title
+        solution: solutionToString(solveWidget.solution)
         onClicked: {
             hide();
             completed();
@@ -172,11 +173,11 @@ Page {
     }
 
     Component.onCompleted: {
-        var solutions = Matrix.randomSolutions(level.solutionsCount, level.solutionsMin, level.solutionsMax);
-        var matrix = Matrix.randomMatrix(solutions, level.multiplierMax);
-        console.log("Generated solutions: " + JSON.stringify(solutions))
+        var solution = Matrix.randomSolution(level.solutionCount, level.solutionMin, level.solutionMax);
+        var matrix = Matrix.randomMatrix(solution, level.multiplierMax);
+        console.log("Generated solution: " + JSON.stringify(solution))
         console.log("Generated matrix: " + JSON.stringify(matrix))
         matrixWidget.matrix = matrix;
-        solveWidget.setSolutions(solutions);
+        solveWidget.setSolution(solution);
     }
 }

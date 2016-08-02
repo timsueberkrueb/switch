@@ -109,7 +109,7 @@ Page {
                 }
 
                 Label {
-                    text: "Solutions?"
+                    text: "Solution?"
                     fontSize: "large"
                 }
 
@@ -250,7 +250,7 @@ Page {
                     Label {
                         Layout.fillWidth: true
                         text: ("1. Transform the matrix into upper <a href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a> "+
-                               "using the row operations. Click on the 'Solve' button when you think you know the solutions.<br/>" +
+                               "using the row operations. Click on the 'Solve' button when you think you know the solution.<br/>" +
                                "⊕ time efficient for small matrices<br/>" +
                                "⊕ train your mental arithmetic skills<br/>" +
                                "⊖ difficult for bigger matrices<br/>" +
@@ -376,7 +376,7 @@ Page {
                     Dialog {
                         id: dialog
                         SolveWidget {
-                            solutions: [2, 1]
+                            solution: [2, 1]
                             onSolved: {
                                 dialog.hide();
                                 PopupUtils.open(successDialogComponent);

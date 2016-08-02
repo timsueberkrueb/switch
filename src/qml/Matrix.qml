@@ -30,30 +30,30 @@ QtObject {
         return Math.floor(Math.random() * (max - min + 1)) + min;
     }
 
-    function randomSolutions(count, min, max) {
+    function randomSolution(count, min, max) {
         if (!count)
             count = 3;
         if (!min)
             min = -5;
         if (!max)
             max = 5;
-        var solutions = [];
+        var solution = [];
         for (var r=0; r<count; r++){
-            solutions.push(randomInt(min, max))
+            solution.push(randomInt(min, max))
         }
-        return solutions;
+        return solution;
     }
 
-    function randomMatrix(solutions, multiplierMax) {
+    function randomMatrix(solution, multiplierMax) {
         var matrix = [];
 
         // Generating a matrix of random multipliers
         // Definitely not an optimal solution,
         // but it works for this purpose
         var mMatrix = [];
-        for (var i=0; i<solutions.length; i++) {
+        for (var i=0; i<solution.length; i++) {
             var mRow = [];
-            for (var y=0; y<solutions.length+1; y++) {
+            for (var y=0; y<solution.length+1; y++) {
                 var randNum = randomInt(1, multiplierMax);
                 if (randNum === 0)
                     randNum = 1;
@@ -65,24 +65,24 @@ QtObject {
             mMatrix.push(mRow);
         }
 
-        for (var r=0; r<solutions.length; r++) {
+        for (var r=0; r<solution.length; r++) {
             var matrixRow = [];
 
-            var solutionMultiplier = mMatrix[r][solutions.length-1];
-            var solution = solutions[r] * solutionMultiplier;
+            var solutionMultiplier = mMatrix[r][solution.length-1];
+            var solutionValue = solution[r] * solutionMultiplier;
 
-            for (var i=0; i<solutions.length; i++) {
+            for (var i=0; i<solution.length; i++) {
                 if (r == i)
                     matrixRow.push(solutionMultiplier);
                 else {
-                    var currentSolution = solutions[i];
+                    var currentSolution = solution[i];
                     var multiplier = mMatrix[r][i];
                     var num = multiplier * currentSolution;
-                    solution += num;
+                    solutionValue += num;
                     matrixRow.push(multiplier);
                 }
             }
-            matrixRow.push(solution);
+            matrixRow.push(solutionValue);
             matrix.push(matrixRow);
         }
         return matrix;

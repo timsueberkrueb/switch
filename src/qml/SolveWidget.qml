@@ -4,21 +4,21 @@ import Ubuntu.Components 1.3
 
 Item {
     id: solveWidget
-    property var solutions
-    property var inputSolutions: []
+    property var solution
+    property var inputSolution: []
     property int padding: 16
     property bool hideButtonVisible: true
 
-    function setSolutions(solutions) {
-        solveWidget.solutions = solutions;
-        inputSolutions = [];
-        for (var i=0; i<solutions.length; i++) {
-            inputSolutions.push(0);
+    function setSolution(solution) {
+        solveWidget.solution = solution;
+        inputSolution = [];
+        for (var i=0; i<solution.length; i++) {
+            inputSolution.push(0);
         }
     }
 
-    signal solved(var solutions)
-    signal failed(var wrongSolutions, var rightSolutions, var correctSolutionsCount)
+    signal solved(var solution)
+    signal failed(var wrongSolution, var rightSolution, var correctSolutionCount)
     signal hideRequested()
 
     width: childrenRect.width + padding * 2
@@ -42,7 +42,7 @@ Item {
 
             Repeater {
                 id: repInput
-                model: solutions
+                model: solution
                 delegate: Row {
                     property alias textField: textField
                     spacing: units.dp(8)
@@ -60,7 +60,7 @@ Item {
 
                         }
                         onTextChanged: {
-                            inputSolutions[index] = parseInt(text == "" ? 0 : text);
+                            inputSolution[index] = parseInt(text == "" ? 0 : text);
                         }
                         onAccepted: {
                             if (index !== repInput.model.length-1)
@@ -82,20 +82,20 @@ Item {
                 color: accentColor
                 onClicked: {
                     var success = true;
-                    var correctSolutions = 0;
-                    for (var i=0; i<solutions.length; i++) {
-                        if (inputSolutions[i] !== solutions[i]) {
+                    var correctSolution = 0;
+                    for (var i=0; i<solution.length; i++) {
+                        if (inputSolution[i] !== solution[i]) {
                             success = false;
                             break;
                         }
                         else {
-                            correctSolutions++;
+                            correctSolution++;
                         }
                     }
                     if (success)
-                        solved(solutions);
+                        solved(solution);
                     else
-                        failed(inputSolutions, solutions, correctSolutions);
+                        failed(inputSolution, solution, correctSolution);
                 }
             }
 
