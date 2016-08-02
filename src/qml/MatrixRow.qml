@@ -62,6 +62,8 @@ Item {
         ]
 
         Drag.active: dragArea.drag.active
+        Drag.hotSpot.x: width/2
+        Drag.hotSpot.y: height/2
 
         Row {
             id: row
