@@ -437,6 +437,7 @@ Page {
             bottom: tutorialSectionSelect.top
         }
 
+        interactive: contentHeight > height
         contentHeight: contentItem.height + contentItem.padding * 2
 
         Item {
