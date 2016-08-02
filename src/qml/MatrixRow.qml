@@ -169,7 +169,7 @@ Item {
             id: divideHelper
             anchors.fill: parent
             property int gcd: Matrix.gcdOfArray(rowModel)
-            property bool relevant: Math.abs(gcd > 1) || gcd === -1
+            property bool relevant: Math.abs(gcd) > 1 || gcd === -1
             opacity: (relevant && !dragArea.drag.active && currentMultiplier === 0) ? 1 : 0
             visible: opacity > 0
             color: accentColor
