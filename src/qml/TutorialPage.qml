@@ -170,7 +170,8 @@ Page {
 
                 Label {
                     text: ("In this simple case, this was the only step needed to solve the system. <br/>" +
-                           "Our matrix is transformed into upper <a href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a>. " +
+                           "Our matrix is transformed into upper <a href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a>, " +
+                           "which means that all matix entries below the <a href='https://en.wikipedia.org/wiki/Main_diagonal'>main diagonal</a> are zero. " +
                            "We can now finish solving the matrix in your head:<br/>" +
                            "1) -1x -1y = -3 <br/>" +
                            "2) -2x = -2 <br/>" +
@@ -196,7 +197,9 @@ Page {
                 }
 
                 Label {
-                    text: " ... until we end up with the so called reduced <a href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>."
+                    text: (" ... until we end up with the so called reduced <a href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>. " +
+                           "This means that in every row there is exactly one leading coefficient which is 1. " +
+                           "All other entries in the same column are 0.")
                     width: parent.width
                     wrapMode: Text.WordWrap
                     linkColor: UbuntuColors.orange
