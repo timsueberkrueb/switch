@@ -36,7 +36,7 @@ Rectangle {
         Icon {
             anchors.centerIn: parent
             name: "back"
-            color: canGoPrevious ? UbuntuColors.warmGrey : UbuntuColors.lightGrey
+            color: canGoPrevious ? UbuntuColors.darkGrey : UbuntuColors.warmGrey
             width: units.dp(16)
             height: width
         }
@@ -102,7 +102,7 @@ Rectangle {
         Icon {
             anchors.centerIn: parent
             name: "go-next"
-            color: canGoNext ? UbuntuColors.warmGrey : UbuntuColors.lightGrey
+            color: canGoNext ? UbuntuColors.darkGrey : UbuntuColors.warmGrey
             width: units.dp(16)
             height: width
         }
