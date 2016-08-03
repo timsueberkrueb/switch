@@ -44,6 +44,16 @@ QtObject {
         return solution;
     }
 
+    function shuffleArray(array) {
+        for (var i = array.length - 1; i > 0; i--) {
+            var j = Math.floor(Math.random() * (i + 1));
+            var temp = array[i];
+            array[i] = array[j];
+            array[j] = temp;
+        }
+        return array;
+    }
+
     function randomMatrix(solution, multiplierMax) {
         var matrix = [];
 
@@ -57,13 +67,18 @@ QtObject {
                 var randNum = randomInt(1, multiplierMax);
                 if (randNum === 0)
                     randNum = 1;
-                if (i===y) {
+                if (i === y) {
                     randNum *= -1;
                 }
+
+                if (i === solution.length-y)
+                    randNum *= 0;
                 mRow.push(randNum);
             }
             mMatrix.push(mRow);
         }
+
+        mMatrix = shuffleArray(mMatrix);
 
         for (var r=0; r<solution.length; r++) {
             var matrixRow = [];
