@@ -115,9 +115,7 @@ Item {
                 verticalCenter: parent.verticalCenter
             }
 
-            property int multiplier: (currentMultiplier > 0 ? (currentMultiplier == 1) ? 1 : (currentMultiplier - 1)
-                                                            : ((currentMultiplier < 0) ? ( (currentMultiplier == -1) ? -1 : (currentMultiplier + 1))
-                                                                                     : 1 ) )
+            property int multiplier: currentMultiplier === 0 ? 1 : currentMultiplier
 
             width: units.dp(32)
             height: units.dp(32)
