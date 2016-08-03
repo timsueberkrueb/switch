@@ -28,7 +28,7 @@ Page {
             height: childrenRect.height
 
             Column {
-                anchors.fill: parent
+                width: parent.width
                 spacing: units.dp(8)
 
                 Label {
@@ -54,6 +54,32 @@ Page {
                 Item { height: units.gu(2); width: parent.width }   // Spacer
 
                 Label {
+                    text: "Credits"
+                    fontSize: "large"
+                }
+
+                Label {
+                    text: "Thanks to <a href='https://twitter.com/sil'>Stuart Langridge</a> for testing, design input and QA."
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                    linkColor: UbuntuColors.orange
+                    onLinkActivated: Qt.openUrlExternally(link);
+                }
+
+                Label {
+                    text: "Thanks to <a href='http://samuelhewitt.com/'>Sam Hewitt</a> for creating the <a href='https://github.com/snwh/ubuntu-icon-resource-kit/'>Ubuntu Icon Resource Kit</a> which was used to create the application icon."
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                    linkColor: UbuntuColors.orange
+                    onLinkActivated: Qt.openUrlExternally(link);
+                }
+
+                Label {
+                    text: "License and Copyright"
+                    fontSize: "large"
+                }
+
+                Label {
                     text: "Source code available on <a href='https://github.com/tim-sueberkrueb/switch'>GitHub</a>."
                     width: parent.width
                     wrapMode: Text.WordWrap
@@ -64,7 +90,7 @@ Page {
                 Label {
                     text: ("This application is free software: you can redistribute it and/or modify it under the terms of" +
                            " the GNU General Public License as published by the Free Software Foundation, either version 3 of the " +
-                           "License, or (at your option) any later version.<br/><br/>Copyright (C) 2016 Tim Süberkrüb<br/>")
+                           "License, or (at your option) any later version.<br/><br/>Copyright © 2016 Tim Süberkrüb<br/>")
                     width: parent.width
                     wrapMode: Text.WordWrap
                 }
