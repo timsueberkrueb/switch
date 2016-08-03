@@ -33,19 +33,22 @@ Page {
         }
     }
 
-    header: normalHeader
+    function generateRandomMatrix(){
+        var solution = Matrix.randomSolution(level.solutionCount, level.solutionMin, level.solutionMax);
+        var matrix = Matrix.randomMatrix(solution, level.multiplierMax);
+        console.log("Generated solution: " + JSON.stringify(solution))
+        console.log("Generated matrix: " + JSON.stringify(matrix))
+        matrixWidget.matrix = matrix;
+        solveWidget.setSolution(solution);
+    }
 
-    MatrixHeader {
-        id: normalHeader
+    header: MatrixHeader {
         title: "Level '%1'".arg(level.title)
         leadingActionBar.actions: [
             Action {
                 iconName: "back"
                 text: "Back"
-                onTriggered: {
-                    Game.statistics.surrenderCount++;
-                    surrendered();
-                }
+                onTriggered: surrendered()
             }
         ]
         contents: RowLayout {
@@ -71,6 +74,24 @@ Page {
                 color: "white"
             }
         }
+        trailingActionBar.numberOfSlots: 0
+        trailingActionBar.actions: [
+            Action {
+                iconName: "reload"
+                text: "Generate new"
+                onTriggered: generateRandomMatrix()
+            },
+            Action {
+                iconName: "system-log-out"
+                text: "Surrender"
+                onTriggered: surrendered()
+            },
+            Action {
+                iconName: "help"
+                text: "Help"
+                onTriggered: pageStack.push(helpPage, {})
+            }
+        ]
     }
 
     Item {
@@ -189,12 +210,5 @@ Page {
         }
     }
 
-    Component.onCompleted: {
-        var solution = Matrix.randomSolution(level.solutionCount, level.solutionMin, level.solutionMax);
-        var matrix = Matrix.randomMatrix(solution, level.multiplierMax);
-        console.log("Generated solution: " + JSON.stringify(solution))
-        console.log("Generated matrix: " + JSON.stringify(matrix))
-        matrixWidget.matrix = matrix;
-        solveWidget.setSolution(solution);
-    }
+    Component.onCompleted: generateRandomMatrix();
 }

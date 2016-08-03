@@ -31,7 +31,7 @@ Page {
                 iconName: "help"
                 text: "Help"
                 onTriggered: {
-                    pageStack.push(helpPage, {})
+                    pageStack.push(helpPage, {});
                 }
             },
             Action {

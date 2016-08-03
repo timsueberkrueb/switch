@@ -36,6 +36,7 @@ MainView {
                     }
                 });
                 page.surrendered.connect(function(){
+                    Game.statistics.surrenderCount++;
                     pageStack.pop(page);
                 });
             }
