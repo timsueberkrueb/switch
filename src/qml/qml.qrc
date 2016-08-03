@@ -27,5 +27,6 @@
         <file>GameCompletedOverlay.qml</file>
         <file>MultiplyHeader.qml</file>
         <file>TutorialSections.qml</file>
+        <file>TutorialColumn.qml</file>
     </qresource>
 </RCC>

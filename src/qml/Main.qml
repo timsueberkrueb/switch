@@ -13,9 +13,7 @@ MainView {
 
     Component {
         id: levelPageComponent
-        LevelPage {
-
-        }
+        LevelPage {}
     }
 
     PageStack {

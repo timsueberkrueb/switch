@@ -13,6 +13,11 @@ Page {
         title: "Tutorial"
     }
 
+    onActiveChanged: {
+        if (!active)
+            tutorialSectionSelect.selectedIndex = 0;
+    }
+
     Flickable {
         id: flickable
         anchors {
@@ -51,6 +56,7 @@ Page {
 
     SwipeArea {
         anchors.fill: flickable
+        enabled: loader.item.swipingEnabled
         direction: SwipeArea.Horizontal
         onDraggingChanged: {
             if (!dragging) {

@@ -33,7 +33,7 @@ Page {
         }
     }
 
-    header: matrixWidget.isRowSelected ? multiplyHeader : normalHeader
+    header: normalHeader
 
     MatrixHeader {
         id: normalHeader
@@ -73,11 +73,6 @@ Page {
         }
     }
 
-    MultiplyHeader {
-        id: multiplyHeader
-        matrixWidget: matrixWidget
-    }
-
     Item {
         id: contentItem
         anchors {
@@ -92,6 +87,16 @@ Page {
             anchors.horizontalCenter: parent.horizontalCenter
             y: units.dp(16)
             onSolved: matrixSolved()
+        }
+
+        MultiplyHeader {
+            id: multiplyHeader
+            anchors {
+                left: parent.left
+                right: parent.right
+                bottom: bottomPanel.top
+            }
+            matrixWidget: matrixWidget
         }
 
         Rectangle {
@@ -117,7 +122,10 @@ Page {
                     visible: !bottomPanel.solving
                     text: "Solve"
                     color: accentColor
-                    onClicked: bottomPanel.solving = true
+                    onClicked: {
+                        matrixWidget.selectNone();
+                        bottomPanel.solving = true;
+                    }
                 }
 
                 SolveWidget {

@@ -6,7 +6,7 @@ import Ubuntu.Components.Popups 1.3
 Item {
     property list<Component> components: [
         Component {
-            Column {
+            TutorialColumn {
                 spacing: units.dp(8)
 
                 Label {
@@ -56,7 +56,7 @@ Item {
             }
         },
         Component {
-            Column {
+            TutorialColumn {
                 spacing: units.dp(8)
 
                 Label {
@@ -123,7 +123,7 @@ Item {
             }
         },
         Component {
-            Column {
+            TutorialColumn {
                 spacing: units.dp(8)
 
                 Label {
@@ -208,7 +208,7 @@ Item {
             }
         },
         Component {
-            Column {
+            TutorialColumn {
                 spacing: units.dp(8)
 
                 Label {
@@ -313,7 +313,8 @@ Item {
             }
         },
         Component {
-            Column {
+            TutorialColumn {
+                swipingEnabled: !multiplyHeader.isDragActive
                 spacing: units.dp(8)
 
                 Label {
@@ -339,10 +340,6 @@ Item {
                     }
                 }
 
-                MultiplyHeader {
-                    matrixWidget: matrixWidget
-                }
-
                 MatrixWidget {
                     id: matrixWidget
                     anchors.horizontalCenter: parent.horizontalCenter
@@ -353,6 +350,11 @@ Item {
                     onSolved: {
                         PopupUtils.open(successDialogComponent);
                     }
+                }
+
+                MultiplyHeader {
+                    id: multiplyHeader
+                    matrixWidget: matrixWidget
                 }
 
                 Label {
