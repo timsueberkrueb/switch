@@ -145,7 +145,7 @@ Item {
         anchors.fill: parent
         drag.target: content
         drag.smoothed: true
-        drag.axis: Drag.XAndYAxis
+        drag.axis: Drag.YAxis
 
         onReleased: {
             content.Drag.drop()
