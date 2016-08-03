@@ -5,6 +5,7 @@ import "."
 
 
 Page {
+    id: levelPage
     property var level
     signal completed()
     signal surrendered()
@@ -32,7 +33,10 @@ Page {
         }
     }
 
-    header: MatrixHeader {
+    header: matrixWidget.isRowSelected ? multiplyHeader : normalHeader
+
+    MatrixHeader {
+        id: normalHeader
         title: "Level '%1'".arg(level.title)
         leadingActionBar.actions: [
             Action {
@@ -69,6 +73,11 @@ Page {
         }
     }
 
+    MultiplyHeader {
+        id: multiplyHeader
+        matrixWidget: matrixWidget
+    }
+
     Item {
         id: contentItem
         anchors {
@@ -80,8 +89,8 @@ Page {
 
         MatrixWidget {
             id: matrixWidget
-            y: units.dp(16)
             anchors.horizontalCenter: parent.horizontalCenter
+            y: units.dp(16)
             onSolved: matrixSolved()
         }
 
