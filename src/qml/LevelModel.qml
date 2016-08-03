@@ -35,7 +35,7 @@ ListModel {
         solutionCount: 3
         solutionMin: -6
         solutionMax: 6
-        multiplierMax: 4
+        multiplierMax: 3
     }
     ListElement {
         title: "Cypher"
@@ -53,7 +53,7 @@ ListModel {
         solutionCount: 4
         solutionMin: -7
         solutionMax: 7
-        multiplierMax: 4
+        multiplierMax: 2
     }
     ListElement {
         title: "Morpheus"
@@ -62,7 +62,7 @@ ListModel {
         solutionCount: 4
         solutionMin: -10
         solutionMax: 10
-        multiplierMax: 4
+        multiplierMax: 3
     }
     ListElement {
         title: "Agent Smith"
@@ -83,12 +83,30 @@ ListModel {
         multiplierMax: 5
     }
     ListElement {
+        title: "Merovingian"
+        description: "I love the French language."
+        color: "#F57C00"
+        solutionCount: 4
+        solutionMin: -10
+        solutionMax: 10
+        multiplierMax: 6
+    }
+    ListElement {
         title: "Oracle"
         description: "I love candy."
         color: "#9C27B0"
         solutionCount: 5
         solutionMin: -10
         solutionMax: 10
-        multiplierMax: 5
+        multiplierMax: 2
+    }
+    ListElement {
+        title: "The Architect"
+        description: "I've been waiting for you."
+        color: "#512DA8"
+        solutionCount: 5
+        solutionMin: -10
+        solutionMax: 10
+        multiplierMax: 4
     }
 }
