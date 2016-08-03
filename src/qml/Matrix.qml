@@ -68,7 +68,7 @@ QtObject {
         for (var r=0; r<solution.length; r++) {
             var matrixRow = [];
 
-            var solutionMultiplier = mMatrix[r][solution.length-1];
+            var solutionMultiplier = mMatrix[r][r];
             var solutionValue = solution[r] * solutionMultiplier;
 
             for (var i=0; i<solution.length; i++) {
