@@ -16,7 +16,7 @@ Item {
         matrixContainer.selectedIndex = -1;
     }
 
-    width: childrenRect.width + padding * 2
+    width: childrenRect.width
     height: childrenRect.height
 
     Item {
