@@ -31,6 +31,10 @@ Item {
             var isSolved = true;
             for (var i=0; i<matrixRepeater.count; i++) {
                 var matrixRow = matrixRepeater.itemAt(i);
+                // Cancel if Repeater has not finished loading all items
+                // Suppresses warning
+                if (matrixRow === null)
+                    return
                 if (!matrixRow.isRowCanonicalForm) {
                     isSolved = false;
                     break;
