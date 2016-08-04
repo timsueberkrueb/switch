@@ -10,11 +10,25 @@ Item {
     property bool isRowSelected: matrixContainer.selectedIndex !== -1
     property alias selectedRow: matrixContainer.selectedRow
 
-    signal solved()
-
     function selectNone() {
         matrixContainer.selectedIndex = -1;
     }
+
+    function currentMatrix() {
+        var m = [];
+        for (var i=0; i<matrix.length; i++) {
+            var item = matrixRepeater.itemAt(i);
+            // Cancel if Repeater has not finished loading all items
+            // Suppresses warning
+            if (item === null)
+                return matrix;
+            m.push(matrixRepeater.itemAt(i).rowModel);
+        }
+        return m;
+    }
+
+    signal solved()
+    signal modelChanged()
 
     width: childrenRect.width
     height: childrenRect.height
@@ -54,6 +68,9 @@ Item {
                 delegate: MatrixRow {
                     id: matrixRow
                     rowModel: matrix[index]
+                    onRowModelChanged: {
+                        matrixWidget.modelChanged();
+                    }
                     isSelected: matrixContainer.selectedIndex == index;
                     onIsRowCanonicalFormChanged: {
                         matrixContainer.checkSolved();

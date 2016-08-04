@@ -59,11 +59,24 @@ MainView {
         }
 
         Component.onCompleted: {
+            // Load settings
+            Game.saves.load();
+            if (typeof Game.saves.matrices.length === 0) {
+                Game.saves.matrices = new Array(Game.levelModel.length);
+                Game.saves.solutions = new Array(Game.levelModel.length);
+            }
+
+            // Prepare UI
             push(mainPage);
             if (Game.firstStart) {
                 push(tutorialPage);
                 Game.firstStart = false;
             }
+        }
+
+        Component.onDestruction: {
+            // Save settings
+            Game.saves.save();
         }
     }
 }

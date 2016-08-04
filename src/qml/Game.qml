@@ -11,6 +11,29 @@ QtObject {
     property int currentLevelIndex: 0
     property int currentStars: 0
 
+    property QtObject saves: QtObject {
+        id: saves
+
+        function load(){
+            saves.matrices = JSON.parse(settings.matrices);
+            saves.solutions = JSON.parse(settings.solutions);
+        }
+
+        function save(){
+            settings.matrices = JSON.stringify(saves.matrices);
+            settings.solutions = JSON.stringify(saves.solutions);
+        }
+
+        property var matrices
+        property var solutions
+
+        property var settings: Settings {
+            category: "saves"
+            property string matrices: "[]"
+            property string solutions: "[]"
+        }
+    }
+
     property QtObject statistics: QtObject {
         id: statistics
         property int failureCount: 0

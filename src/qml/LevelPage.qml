@@ -31,6 +31,9 @@ Page {
         else {
             successOverlay.show();
         }
+        // Clear saves
+        Game.saves.solutions[level.index] = undefined;
+        Game.saves.matrices[level.index] = undefined;
     }
 
     function generateRandomMatrix(){
@@ -40,6 +43,8 @@ Page {
         console.log("Generated matrix: " + JSON.stringify(matrix))
         matrixWidget.matrix = matrix;
         solveWidget.setSolution(solution);
+        // Save solution
+        Game.saves.solutions[level.index] = solution;
     }
 
     header: MatrixHeader {
@@ -108,6 +113,9 @@ Page {
             anchors.horizontalCenter: parent.horizontalCenter
             y: units.dp(16)
             onSolved: matrixSolved()
+            onModelChanged: {
+                Game.saves.matrices[level.index] = currentMatrix();
+            }
         }
 
         MultiplyHeader {
@@ -210,5 +218,13 @@ Page {
         }
     }
 
-    Component.onCompleted: generateRandomMatrix();
+    Component.onCompleted: {
+        if (typeof Game.saves.matrices[level.index] !== 'undefined') {
+            matrixWidget.matrix = Game.saves.matrices[level.index];
+            solveWidget.solution = Game.saves.solutions[level.index];
+        }
+        else {
+            generateRandomMatrix();
+        }
+    }
 }
