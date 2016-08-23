@@ -103,7 +103,7 @@ Page {
                         text: "★ Rate"
                         color: UbuntuColors.green
                         onClicked: {
-                            Qt.openUrlExternally("scope://com.canonical.scopes.clickstore?q=Switch")
+                            Qt.openUrlExternally("scope://com.canonical.scopes.clickstore?q=Switch by Tim Süberkrüb")
                         }
                     }
 
