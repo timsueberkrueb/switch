@@ -8,7 +8,7 @@
 
 ## Installation
 
-## Ubuntu Store
+### Ubuntu Store
 Switch is available for download from the [Ubuntu Store](https://uappexplorer.com/app/switch.timsueberkrueb).
 
 You can download click-packages for all available releases [here](https://github.com/tim-sueberkrueb/switch/releases).
@@ -30,7 +30,7 @@ qmake; make
 ```
 Tested on Ubuntu 16.04.
 
-### Ubuntu phone
+### Develop for Ubuntu phone
 Make sure you have the [Ubuntu SDK installed](https://developer.ubuntu.com/en/phone/platform/sdk/installing-the-sdk/).
 Open the project (File > Open file or project > Select `switch.timsueberkrueb.pro`)
 
