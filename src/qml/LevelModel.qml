@@ -60,8 +60,8 @@ ListModel {
         description: " The Matrix is everywhere."
         color: "#FFC107"
         solutionCount: 4
-        solutionMin: -10
-        solutionMax: 10
+        solutionMin: -8
+        solutionMax: 8
         multiplierMax: 3
     }
     ListElement {
@@ -69,9 +69,9 @@ ListModel {
         description: "Never send a human to do a machine's job."
         color: "#212121"
         solutionCount: 4
-        solutionMin: -10
-        solutionMax: 10
-        multiplierMax: 4
+        solutionMin: -9
+        solutionMax: 9
+        multiplierMax: 3
     }
     ListElement {
         title: "Neo"
@@ -80,16 +80,16 @@ ListModel {
         solutionCount: 4
         solutionMin: -10
         solutionMax: 10
-        multiplierMax: 5
+        multiplierMax: 3
     }
     ListElement {
         title: "Merovingian"
         description: "I love the French language."
         color: "#F57C00"
-        solutionCount: 4
+        solutionCount: 5
         solutionMin: -10
         solutionMax: 10
-        multiplierMax: 6
+        multiplierMax: 2
     }
     ListElement {
         title: "Oracle"
@@ -98,7 +98,7 @@ ListModel {
         solutionCount: 5
         solutionMin: -10
         solutionMax: 10
-        multiplierMax: 2
+        multiplierMax: 3
     }
     ListElement {
         title: "The Architect"
