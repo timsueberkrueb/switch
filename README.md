@@ -8,6 +8,11 @@
 
 ## Installation
 
+## Ubuntu Store
+Switch is available for download from the [Ubuntu Store](https://uappexplorer.com/app/switch.timsueberkrueb).
+
+You can download click-packages for all available releases [here](https://github.com/tim-sueberkrueb/switch/releases).
+
 ### Ubuntu Desktop
 Make sure you have all dependencies installed:
 ```
