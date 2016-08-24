@@ -48,11 +48,11 @@ Page {
     }
 
     header: MatrixHeader {
-        title: "Level '%1'".arg(level.title)
+        title: i18n.tr("Level '%1'").arg(level.title)
         leadingActionBar.actions: [
             Action {
                 iconName: "back"
-                text: "Back"
+                text: i18n.tr("Back")
                 onTriggered: surrendered()
             }
         ]
@@ -83,17 +83,17 @@ Page {
         trailingActionBar.actions: [
             Action {
                 iconName: "reload"
-                text: "Generate new"
+                text: i18n.tr("Generate new")
                 onTriggered: generateRandomMatrix()
             },
             Action {
                 iconName: "system-log-out"
-                text: "Surrender"
+                text: i18n.tr("Surrender")
                 onTriggered: surrendered()
             },
             Action {
                 iconName: "help"
-                text: "Help"
+                text: i18n.tr("Help")
                 onTriggered: pageStack.push(helpPage, {})
             }
         ]
@@ -149,7 +149,7 @@ Page {
 
                 Button {
                     visible: !bottomPanel.solving
-                    text: "Solve"
+                    text: i18n.tr("Solve")
                     color: accentColor
                     onClicked: {
                         matrixWidget.selectNone();

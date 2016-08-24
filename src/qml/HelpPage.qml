@@ -7,7 +7,7 @@ Page {
     visible: false
 
     header: MatrixHeader {
-        title: "Help"
+        title: i18n.tr("Help")
     }
 
     Flickable {
@@ -34,35 +34,35 @@ Page {
                 spacing: units.dp(8)
 
                 Label {
-                    text: "What is Switch?"
+                    text: i18n.tr("What is Switch?")
                     fontSize: "large"
                 }
 
                 Label {
-                    text: "Switch is a game about solving systems of linear equations using the Gaussian elimination of matrices."
+                    text: i18n.tr("Switch is a game about solving systems of linear equations using the Gaussian elimination of matrices.")
                     wrapMode: Text.WordWrap
                     width: parent.width
                 }
 
                 Label {
-                    text: "WTF?"
+                    text: i18n.tr("WTF?")
                     fontSize: "large"
                 }
 
                 Label {
                     text: (
-                        "Errrm, yeah 😄 " +
+                        i18n.tr("Errrm, yeah 😄 " +
                         "Actually, I'm not sure if you can call this 'a game' at all ... " +
                         "However, if you're a student and you want to practise the Gaussian elimination algorithm a bit this app can help you. " +
                         "You could also see this as a refreshingly different way to prepare for an exam 😉. It's basically up to you to define this app's purpose. " +
-                        "Of course, if you're not a student, Switch can still be a good way to train your mathematical skills."
+                        "Of course, if you're not a student, Switch can still be a good way to train your mathematical skills.")
                     )
                     wrapMode: Text.WordWrap
                     width: parent.width
                 }
 
                 Label {
-                    text: "<a href='#'>OMG seriously?! Get me out of here!</a>"
+                    text: "<a href='#'>%1</a>".arg(i18n.tr("OMG seriously?! Get me out of here!"))
                     linkColor: UbuntuColors.orange
                     wrapMode: Text.WordWrap
                     width: parent.width
@@ -72,12 +72,12 @@ Page {
                 }
 
                 Label {
-                    text: "How does it work?"
+                    text: i18n.tr("How does it work?")
                     fontSize: "large"
                 }
 
                 Button {
-                    text: "Show the tutorial"
+                    text: i18n.tr("Show the tutorial")
                     color: UbuntuColors.green
                     onClicked: {
                         pageStack.push(tutorialPage);

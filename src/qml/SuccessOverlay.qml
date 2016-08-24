@@ -21,27 +21,27 @@ Overlay {
 
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: "Success"
+            text: i18n.tr("Success")
             fontSize: "x-large"
             color: "white"
         }
 
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: "Matrix solved."
+            text: i18n.tr("Matrix solved.")
             color: "white"
         }
 
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: "Solution: %1".arg(solution)
+            text: i18n.tr("Solution: %1").arg(solution)
             color: "white"
         }
 
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
             visible: levelIndex === Game.currentLevelIndex && Game.currentStars < 5
-            text: "Solve %1 more to complete the level.".arg(5 - Game.currentStars)
+            text: i18n.tr("Solve %1 more to complete the level.").arg(5 - Game.currentStars)
             color: "white"
         }
 
@@ -49,7 +49,7 @@ Overlay {
             anchors.horizontalCenter: parent.horizontalCenter
             visible: levelIndex === Game.currentLevelIndex && Game.currentStars === 5
                      && Game.currentLevelIndex < Game.levelModel.count - 1
-            text: "<b>Level '%1' unlocked.</b>".arg(visible ? Game.levelModel.get(Game.currentLevelIndex+1).title : "")
+            text: i18n.tr("<b>Level '%1' unlocked.</b>").arg(visible ? Game.levelModel.get(Game.currentLevelIndex+1).title : "")
             color: "white"
         }
     }
@@ -82,7 +82,7 @@ Overlay {
             horizontalCenter: parent.horizontalCenter
             margins: units.dp(16)
         }
-        text: "Tap anywhere to continue"
+        text: i18n.tr("Tap anywhere to continue")
         color: "white"
     }
 }

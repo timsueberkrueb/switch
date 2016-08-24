@@ -8,11 +8,11 @@ Overlay {
     property int overallSolutionCount: 0
 
     property var motivativeSlogans: [
-        "Nevermind, moving on!",
-        "Don't worry!",
-        "Keep your head up!",
-        "Hold your head up!",
-        "Go on!"
+        i18n.tr("Nevermind, moving on!"),
+        i18n.tr("Don't worry!"),
+        i18n.tr("Keep your head up!"),
+        i18n.tr("Hold your head up!"),
+        i18n.tr("Go on!")
     ]
 
     color: warningColorLight
@@ -27,24 +27,24 @@ Overlay {
 
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: "Failure"
+            text: i18n.tr("Failure")
             fontSize: "x-large"
         }
 
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: "%1/%2 correct".arg(correctSolutionCount).arg(overallSolutionCount)
+            text: i18n.tr("%1/%2 correct").arg(correctSolutionCount).arg(overallSolutionCount)
             fontSize: "medium"
         }
 
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: "<b>Your solution</b>: %1".arg(wrongSolution)
+            text: i18n.tr("<b>Your solution</b>: %1").arg(wrongSolution)
         }
 
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: "<b>Correct solution</b>: %1".arg(rightSolution)
+            text: i18n.tr("<b>Correct solution</b>: %1").arg(rightSolution)
         }
 
         Label {
@@ -60,6 +60,6 @@ Overlay {
             margins: units.dp(16)
         }
 
-        text: "Tap anywhere to continue"
+        text: i18n.tr("Tap anywhere to continue")
     }
 }

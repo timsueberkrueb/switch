@@ -28,7 +28,7 @@ Overlay {
 
         Label {
             anchors.verticalCenter: parent.verticalCenter
-            text: "Back to game"
+            text: i18n.tr("Back to game")
             fontSize: "large"
         }
     }
@@ -48,18 +48,18 @@ Overlay {
 
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: "You made it!"
+            text: i18n.tr("You made it!")
             fontSize: "x-large"
         }
 
         Label {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: "Thanks so much for playing."
+            text: i18n.tr("Thanks so much for playing.")
         }
 
         Button {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: "★ Rate"
+            text: i18n.tr("★ %1").arg("Rate")
             color: UbuntuColors.green
             onClicked: {
                 Qt.openUrlExternally("scope://com.canonical.scopes.clickstore?q=Switch by Tim Süberkrüb")

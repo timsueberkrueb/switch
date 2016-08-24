@@ -10,7 +10,7 @@ Page {
     visible: false
     header: MatrixHeader {
         id: normalHeader
-        title: "Tutorial"
+        title: i18n.tr("Tutorial")
     }
 
     onActiveChanged: {

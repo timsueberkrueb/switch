@@ -1,0 +1,9 @@
+[main]
+host = https://www.transifex.com
+
+[switch.switchtimsueberkruebpot]
+source_file = po/switch.timsueberkrueb.pot
+source_lang = en
+type = PO
+file_filter = po/<lang>.po
+

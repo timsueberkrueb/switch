@@ -2,7 +2,7 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,17 +10,18 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2016-08-24 16:01+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language-Team: LANGUAGE <LL@li.org>\n"
-"Language: \n"
+"Last-Translator: Tim Süberkrüb <tim.sueberkrueb@gmail.com>, 2016\n"
+"Language-Team: German (https://www.transifex.com/tim-sueberkrueb/teams/66307/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:8
 #: /home/tim/Dev/Projects/switch/src/qml/MainPage.qml:46
 msgid "About"
-msgstr ""
+msgstr "Über"
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:51
 msgid "A simple game about linear equations"
@@ -33,7 +34,8 @@ msgstr ""
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:62
 #, qt-format
 msgid ""
-"Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and QA."
+"Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and "
+"QA."
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:70
@@ -364,8 +366,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:70
 msgid ""
-"”The answer is out there, Neo. It's looking for you, and it will find you if "
-"you want it to.”"
+"”The answer is out there, Neo. It's looking for you, and it will find you if"
+" you want it to.”"
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:85
@@ -374,8 +376,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:89
 msgid ""
-"The matrices in Switch are matrices of coefficients of associated systems of "
-"linear equations. Consider the following linear system: <br/>"
+"The matrices in Switch are matrices of coefficients of associated systems of"
+" linear equations. Consider the following linear system: <br/>"
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:106
@@ -406,7 +408,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:172
 msgid ""
-"In this simple case, this was the only step needed to solve the system. <br/>"
+"In this simple case, this was the only step needed to solve the system. "
+"<br/>"
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:186
@@ -417,8 +420,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:200
 msgid ""
-" ... until we end up with the so called reduced <a href='https://en."
-"wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>. "
+" ... until we end up with the so called reduced <a "
+"href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>. "
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:215
@@ -441,8 +444,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:249
 msgid ""
-"1. Transform the matrix into upper <a href='https://en.wikipedia.org/wiki/"
-"Triangular_matrix'>triangular form</a> "
+"1. Transform the matrix into upper <a "
+"href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a> "
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:273
@@ -468,8 +471,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:333
 msgid ""
-"As soon as you think you got it, you can <a href='#'>check your solution</"
-"a>. "
+"As soon as you think you got it, you can <a href='#'>check your "
+"solution</a>. "
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:361

@@ -29,21 +29,21 @@ Page {
         trailingActionBar.actions: [
             Action {
                 iconName: "help"
-                text: "Help"
+                text: i18n.tr("Help")
                 onTriggered: {
                     pageStack.push(helpPage, {});
                 }
             },
             Action {
                 iconName: "toolkit_tick"
-                text: "Stats"
+                text: i18n.tr("Stats")
                 onTriggered: {
                     pageStack.push(statsPage, {});
                 }
             },
             Action {
                 iconName: "info"
-                text: "About"
+                text: i18n.tr("About")
                 onTriggered: {
                     pageStack.push(aboutPage, {});
                 }
@@ -112,7 +112,7 @@ Page {
 
                                 Label {
                                     Layout.fillWidth: true
-                                    text: locked ? "🔒 Locked" : model.title
+                                    text: locked ? "🔒 %1".arg(i18n.tr("Locked")) : model.title
                                     fontSize: "large"
                                 }
 
@@ -122,7 +122,7 @@ Page {
                             }
 
                             Label {
-                                text: locked ? "Earn all stars in previous levels to unlock." : model.description
+                                text: locked ? i18n.tr("Earn all stars in previous levels to unlock.") : model.description
                                 width: parent.width
                                 elide: Text.ElideRight
                             }

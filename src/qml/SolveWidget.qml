@@ -30,7 +30,7 @@ Item {
         spacing: units.dp(8)
 
         Label {
-            text: "Solve"
+            text: i18n.tr("Solve")
             fontSize: "large"
         }
 
@@ -78,7 +78,7 @@ Item {
 
             Button {
                 id: solveButton
-                text: "Solve"
+                text: i18n.tr("Solve")
                 color: accentColor
                 onClicked: {
                     var success = true;
@@ -101,7 +101,7 @@ Item {
 
             Button {
                 visible: hideButtonVisible
-                text: "Hide"
+                text: i18n.tr("Hide")
                 color: themeColor
                 onClicked: {
                     hideRequested();

@@ -58,7 +58,7 @@ MatrixHeader {
 
                 Label {
                     anchors.verticalCenter: parent.verticalCenter
-                    text: "Move the slider to multiply"
+                    text: i18n.tr("Move the slider to multiply")
                     color: "white"
                     opacity: dragArea.drag.active ? 0 : 1
 

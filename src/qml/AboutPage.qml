@@ -5,7 +5,7 @@ Page {
     visible: false
 
     header: MatrixHeader {
-        title: "About"
+        title: i18n.tr("About")
     }
 
     Flickable {
@@ -48,18 +48,18 @@ Page {
 
                 Label {
                     anchors.horizontalCenter: parent.horizontalCenter
-                    text: "A simple game about linear equations"
+                    text: i18n.tr("A simple game about linear equations")
                 }
 
                 Item { height: units.gu(2); width: parent.width }   // Spacer
 
                 Label {
-                    text: "Credits"
+                    text: i18n.tr("Credits")
                     fontSize: "large"
                 }
 
                 Label {
-                    text: "Thanks to <a href='https://twitter.com/sil'>Stuart Langridge</a> for testing, design input and QA."
+                    text: i18n.tr("Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and QA.").arg("https://twitter.com/sil")
                     width: parent.width
                     wrapMode: Text.WordWrap
                     linkColor: UbuntuColors.orange
@@ -67,7 +67,10 @@ Page {
                 }
 
                 Label {
-                    text: "Thanks to <a href='http://samuelhewitt.com/'>Sam Hewitt</a> for creating the <a href='https://github.com/snwh/ubuntu-icon-resource-kit/'>Ubuntu Icon Resource Kit</a> which was used to create the application icon."
+                    text: i18n.tr("Thanks to <a href='%1'>Sam Hewitt</a> for creating the <a href='%2'>" +
+                          "Ubuntu Icon Resource Kit</a> which was used to create the application icon.")
+                           .arg("http://samuelhewitt.com/")
+                           .arg("https://github.com/snwh/ubuntu-icon-resource-kit")
                     width: parent.width
                     wrapMode: Text.WordWrap
                     linkColor: UbuntuColors.orange
@@ -75,12 +78,12 @@ Page {
                 }
 
                 Label {
-                    text: "License and Copyright"
+                    text: i18n.tr("License and Copyright")
                     fontSize: "large"
                 }
 
                 Label {
-                    text: "Source code available on <a href='https://github.com/tim-sueberkrueb/switch'>GitHub</a>."
+                    text: i18n.tr("Source code available on <a href='%1'>GitHub</a>.").arg("https://github.com/tim-sueberkrueb/switch")
                     width: parent.width
                     wrapMode: Text.WordWrap
                     linkColor: UbuntuColors.orange
@@ -100,7 +103,7 @@ Page {
                     spacing: units.dp(8)
 
                     Button {
-                        text: "★ Rate"
+                        text: ("★ %1").arg(i18n.tr("Rate"))
                         color: UbuntuColors.green
                         onClicked: {
                             Qt.openUrlExternally("scope://com.canonical.scopes.clickstore?q=Switch by Tim Süberkrüb")
@@ -108,7 +111,7 @@ Page {
                     }
 
                     Button {
-                        text: "🐞 Report bug"
+                        text: ("🐞 %1").arg(i18n.tr("Report bug"))
                         color: UbuntuColors.orange
                         onClicked: {
                             Qt.openUrlExternally("https://github.com/tim-sueberkrueb/switch/issues/new");
@@ -116,7 +119,7 @@ Page {
                     }
 
                     Button {
-                        text: "♥ Contribute"
+                        text: ("♥ %1").arg(i18n.tr("Contribute"))
                         color: UbuntuColors.darkAubergine
                         onClicked: {
                             Qt.openUrlExternally("https://github.com/tim-sueberkrueb/switch");

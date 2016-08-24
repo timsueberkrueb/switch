@@ -21,15 +21,15 @@ Page {
         spacing: units.dp(8)
 
         Label {
-            text: "Matrices solved: %1".arg(Game.statistics.successCount)
+            text: i18n.tr("Matrices solved: %1").arg(Game.statistics.successCount)
         }
 
         Label {
-            text: "Failure count: %1".arg(Game.statistics.failureCount)
+            text: i18n.tr("Failure count: %1").arg(Game.statistics.failureCount)
         }
 
         Label {
-            text: "Success rate: %1%".arg(Math.round(Game.statistics.successCount/(Game.statistics.failureCount+Game.statistics.successCount)*100))
+            text: i18n.tr("Success rate: %1%").arg(Math.round(Game.statistics.successCount/(Game.statistics.failureCount+Game.statistics.successCount)*100))
         }
     }
 }
