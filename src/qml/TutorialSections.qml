@@ -174,7 +174,7 @@ Item {
                            "which means that all matix entries below the <a href='https://en.wikipedia.org/wiki/Main_diagonal'>main diagonal</a> are zero. " +
                            "We can now finish solving the matrix in your head:<br/>" +
                            "1) -1x -1y = -3 <br/>" +
-                           "2) -2x = -2 <br/>" +
+                           "2) -2y = -2 <br/>" +
                            "Therefore: x = 2, y = 1")
                     width: parent.width
                     wrapMode: Text.WordWrap
