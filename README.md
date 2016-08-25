@@ -6,6 +6,9 @@
 * Thanks to [Stuart Langridge](https://twitter.com/sil) for testing, design input and QA.
 * Thanks to [Sam Hewitt](http://samuelhewitt.com/) for creating the [Ubuntu Icon Resource Kit](https://github.com/snwh/ubuntu-icon-resource-kit) which was used to create the application icon
 
+## Translations
+Please help translating Switch [on Transifex](https://www.transifex.com/tim-sueberkrueb/switch/).
+
 ## Installation
 
 ### Ubuntu Store
