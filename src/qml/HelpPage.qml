@@ -51,11 +51,11 @@ Page {
 
                 Label {
                     text: (
-                        i18n.tr("Errrm, yeah 😄 " +
-                        "Actually, I'm not sure if you can call this 'a game' at all ... " +
-                        "However, if you're a student and you want to practise the Gaussian elimination algorithm a bit this app can help you. " +
-                        "You could also see this as a refreshingly different way to prepare for an exam 😉. It's basically up to you to define this app's purpose. " +
-                        "Of course, if you're not a student, Switch can still be a good way to train your mathematical skills.")
+                        i18n.tr("Errrm, yeah 😄 ") +
+                        i18n.tr("Actually, I'm not sure if you can call this 'a game' at all ... ") +
+                        i18n.tr("However, if you're a student and you want to practise the Gaussian elimination algorithm a bit this app can help you. ") +
+                        i18n.tr("You could also see this as a refreshingly different way to prepare for an exam 😉. It's basically up to you to define this app's purpose. ") +
+                        i18n.tr("Of course, if you're not a student, Switch can still be a good way to train your mathematical skills.")
                     )
                     wrapMode: Text.WordWrap
                     width: parent.width

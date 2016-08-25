@@ -59,7 +59,7 @@ Overlay {
 
         Button {
             anchors.horizontalCenter: parent.horizontalCenter
-            text: i18n.tr("★ %1").arg("Rate")
+            text: ("★ %1").arg(i18n.tr("Rate"))
             color: UbuntuColors.green
             onClicked: {
                 Qt.openUrlExternally("scope://com.canonical.scopes.clickstore?q=Switch by Tim Süberkrüb")

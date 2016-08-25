@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-25 19:39+0000\n"
+"POT-Creation-Date: 2016-08-25 20:29+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Language-Team: Spanish (https://www.transifex.com/tim-sueberkrueb/"
 "teams/66307/es/)\n"
@@ -39,27 +39,30 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:70
 #, qt-format
-msgid "Thanks to <a href='%1'>Sam Hewitt</a> for creating the <a href='%2'>"
+msgid ""
+"Thanks to <a href='%1'>Sam Hewitt</a> for creating the <a href='%2'>Ubuntu "
+"Icon Resource Kit</a> which was used to create the application icon."
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:81
+#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:80
 msgid "License and Copyright"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:86
+#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:85
 #, qt-format
 msgid "Source code available on <a href='%1'>GitHub</a>."
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:106
+#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:105
+#: /home/tim/Dev/Projects/switch/src/qml/GameCompletedOverlay.qml:62
 msgid "Rate"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:114
+#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:113
 msgid "Report bug"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:122
+#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:121
 msgid "Contribute"
 msgstr ""
 
@@ -119,11 +122,6 @@ msgstr ""
 msgid "Thanks so much for playing."
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/GameCompletedOverlay.qml:62
-#, qt-format
-msgid "★ %1"
-msgstr ""
-
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:10
 #: /home/tim/Dev/Projects/switch/src/qml/LevelPage.qml:96
 #: /home/tim/Dev/Projects/switch/src/qml/MainPage.qml:32
@@ -146,6 +144,28 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:54
 msgid "Errrm, yeah 😄 "
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:55
+msgid "Actually, I'm not sure if you can call this 'a game' at all ... "
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:56
+msgid ""
+"However, if you're a student and you want to practise the Gaussian "
+"elimination algorithm a bit this app can help you. "
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:57
+msgid ""
+"You could also see this as a refreshingly different way to prepare for an "
+"exam 😉. It's basically up to you to define this app's purpose. "
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:58
+msgid ""
+"Of course, if you're not a student, Switch can still be a good way to train "
+"your mathematical skills."
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:65
@@ -351,6 +371,12 @@ msgid ""
 "Gaussian elimination of matrices. <br/>"
 msgstr ""
 
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:29
+msgid ""
+"Yeah, I know. That sounds scary. It doesn't really sound like a lot of fun, "
+"rather like one of <i>those</i> maths lessons, right? 😉"
+msgstr ""
+
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:39
 msgid "”Then let us hope that I was wrong”"
 msgstr ""
@@ -379,6 +405,10 @@ msgid ""
 "linear equations. Consider the following linear system: <br/>"
 msgstr ""
 
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:92
+msgid "Now we're removing all the clutter ... <br/>"
+msgstr ""
+
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:106
 msgid "... and we get a matrix form like the one above."
 msgstr ""
@@ -391,6 +421,16 @@ msgstr ""
 msgid "In Switch, all matrices have exactly one correct solution. "
 msgstr ""
 
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:118
+msgid ""
+"A solution is an assignment of values to the variables (x, y) such that all "
+"equations are correct. "
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:119
+msgid "In our case the solution x=2, y=1 satisfies the linear system."
+msgstr ""
+
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:130
 msgid "How to solve a matrix"
 msgstr ""
@@ -399,10 +439,47 @@ msgstr ""
 msgid "There are multiple ways to solve a system of linear equations. "
 msgstr ""
 
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:136
+msgid ""
+"In Switch you will use <a href='https://en.wikipedia.org/wiki/"
+"Gaussian_elimination'>Gaussian elimination</a>, also known as row reduction. "
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:137
+msgid ""
+"Using the Gaussian elimination algorithm you can perform several actions on "
+"a matrix of coefficients. "
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:138
+msgid ""
+"Those actions are called row operations. In Switch you are able to ... <br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:139
+msgid "... multiply a row by a number<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:140
+msgid "... add one row to another<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:141
+msgid ""
+"The goal of all this is to eliminate variables by setting the coefficient to "
+"zero. Remember our example: <br/>"
+msgstr ""
+
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:157
 msgid ""
 "To solve this matrix, we would like to eliminate the x variable from the "
-"second row. To achieve this, we'll multiply the first row by -1 "
+"second row. "
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:158
+msgid ""
+"To achieve this, we'll multiply the first row by -1 and add it to the second "
+"row. The result:<br/>"
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:172
@@ -410,95 +487,198 @@ msgid ""
 "In this simple case, this was the only step needed to solve the system. <br/>"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:186
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:173
+msgid ""
+"Our matrix is transformed into upper <a href='https://en.wikipedia.org/wiki/"
+"Triangular_matrix'>triangular form</a>, which means that all matix entries "
+"below the <a href='https://en.wikipedia.org/wiki/Main_diagonal'>main "
+"diagonal</a> are zero. "
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:174
+msgid "We can now finish solving the matrix in your head:<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:177
+msgid "Therefore: x = 2, y = 1"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:185
 msgid ""
 "Alternatively we can continue to simplify the matrix using the row "
 "operations ..."
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:200
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:199
 msgid ""
 " ... until we end up with the so called reduced <a href='https://en."
 "wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>. "
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:215
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:200
+msgid ""
+"This means that in every row there is exactly one leading coefficient which "
+"is 1. "
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:201
+msgid "All other entries in the same column are 0."
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:214
 msgid "And ... action"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:220
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:219
 msgid ""
 "In Switch, this all is even more hassle-free. I think it's time to try it "
 "yourself."
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:226
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:225
 msgid "Row operations:<br/>"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:238
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:226
+msgid "<u>Add:</u><br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:227
+msgid "• You can drag and drop a row onto another to add it<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:228
+msgid "<u>Multiply</u><br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:229
+msgid "• Tap on a row to select it<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:230
+msgid "• The multiply header will show<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:231
+msgid ""
+"• Hold and move the slider increase/decrease the value of the mutliplicator, "
+"release to multiply<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:237
 msgid "In Switch, there are two ways to solve a matrix:<br/>"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:249
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:248
 msgid ""
 "1. Transform the matrix into upper <a href='https://en.wikipedia.org/wiki/"
-"Triangular_matrix'>triangular form</a> "
+"Triangular_matrix'>triangular form</a> using the row operations. "
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:273
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:249
+msgid "Click on the 'Solve' button when you think you know the solution.<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:250
+msgid "⊕ time efficient for small matrices<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:251
+msgid "⊕ train your mental arithmetic skills<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:252
+msgid "⊖ difficult for bigger matrices<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:253
+msgid "↳ recommended for smaller matrices"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:272
 msgid ""
 "2. Simplify the matrix as much as possible by using the row operations. "
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:296
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:273
+msgid ""
+"You will end up with the so called reduced <a href='https://en.wikipedia.org/"
+"wiki/Row_echelon_form'>row echelon form</a> and Switch will detect that the "
+"matrix is solved.<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:274
+msgid "⊕ easy on the brain (no need for mental arithmetic)<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:275
+msgid "⊖ wastefully time consuming for smaller matrices<br/>"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:276
+msgid "↳ recommended for big matrices"
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:294
 msgid "”The problem is choice.”"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:311
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:309
 msgid "– <i>Neo</i>"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:321
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:319
 msgid "Let's go"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:326
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:324
 msgid "I think it's time to try it yourself."
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:333
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:331
 msgid ""
 "As soon as you think you got it, you can <a href='#'>check your solution</"
 "a>. "
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:361
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:332
+msgid ""
+"Or, alternatively, simplify it to the very end and Switch will handle the "
+"rest."
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:359
 msgid ""
 "<u>Hint:</u> The variables in Switch are called X1, X2, X3 ... XN (e.g. "
 "instead of x, y, z). "
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:369
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:360
+msgid ""
+"The reason for this is simply that there will be more than just 3 variables "
+"in the game and this naming scheme is more consistent therefore."
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:366
 msgid "No idea what to do? <a href='#'>Go back to the explanations</a>."
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:401
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:398
 msgid "Success!"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:402
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:399
 msgid "Are you ready for more?"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:404
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:401
 msgid "Continue"
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:418
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:415
 msgid "Hmmm ..."
 msgstr ""
 
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:419
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:416
 msgid "This is not the correct solution. Try again!"
 msgstr ""

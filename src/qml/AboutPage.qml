@@ -67,8 +67,7 @@ Page {
                 }
 
                 Label {
-                    text: i18n.tr("Thanks to <a href='%1'>Sam Hewitt</a> for creating the <a href='%2'>" +
-                          "Ubuntu Icon Resource Kit</a> which was used to create the application icon.")
+                    text: i18n.tr("Thanks to <a href='%1'>Sam Hewitt</a> for creating the <a href='%2'>Ubuntu Icon Resource Kit</a> which was used to create the application icon.")
                            .arg("http://samuelhewitt.com/")
                            .arg("https://github.com/snwh/ubuntu-icon-resource-kit")
                     width: parent.width
