@@ -2,20 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-24 16:01+0000\n"
+"POT-Creation-Date: 2016-08-25 19:39+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Gabriele Martelli <gabrielemartelli@tiscali.it>, 2016\n"
-"Language-Team: Italian (https://www.transifex.com/tim-sueberkrueb/teams/66307/it/)\n"
+"Language-Team: Italian (https://www.transifex.com/tim-sueberkrueb/"
+"teams/66307/it/)\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:8
@@ -34,11 +35,10 @@ msgstr "Crediti"
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:62
 #, qt-format
 msgid ""
-"Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and "
-"QA."
+"Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and QA."
 msgstr ""
-"Grazie a <a href='%1'>Stuart Langridge</a> per le prove, suggerimenti per la"
-" grafica ed i controlli di qualità."
+"Grazie a <a href='%1'>Stuart Langridge</a> per le prove, suggerimenti per la "
+"grafica ed i controlli di qualità."
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:70
 #, qt-format
@@ -54,7 +54,10 @@ msgstr "Licenza e Copyright"
 msgid "Source code available on <a href='%1'>GitHub</a>."
 msgstr ""
 "Codice sorgente disponibile su <a href='%1'>GitHub</a>.\n"
-"Questa applicazione è rilasciata come Software Libero, puoi ridistribuire e/o modificare il codice sotto i termini della GNU General Public License pubblicata dalla Free Software Foundation, entrambe le versioni 3 della Licenza, o (a tua scelta) ogni precedente versione."
+"Questa applicazione è rilasciata come Software Libero, puoi ridistribuire e/"
+"o modificare il codice sotto i termini della GNU General Public License "
+"pubblicata dalla Free Software Foundation, entrambe le versioni 3 della "
+"Licenza, o (a tua scelta) ogni precedente versione."
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:106
 msgid "Rate"
@@ -154,8 +157,8 @@ msgstr "Cosa ??!!!"
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:54
 msgid "Errrm, yeah 😄 "
 msgstr ""
-"ehm... esatto! 😄 A dire il vero, non sono sicuro che tutti possano chiamere"
-" questo \"un gioco\" ... però, se sei uno studente, e vuoi fare pratica con "
+"ehm... esatto! 😄 A dire il vero, non sono sicuro che tutti possano chiamere "
+"questo \"un gioco\" ... però, se sei uno studente, e vuoi fare pratica con "
 "l'algoritmo di eliminazione di Gauss, questa applicazione può aiutarti. "
 "Potrebbe essere anche un modo piacevolmente diverso per preparare un esame "
 "😄. Fondamentalmente potremmo definire questo lo scopo di questa "
@@ -381,8 +384,8 @@ msgstr "Cos'è Matrix?"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:70
 msgid ""
-"”The answer is out there, Neo. It's looking for you, and it will find you if"
-" you want it to.”"
+"”The answer is out there, Neo. It's looking for you, and it will find you if "
+"you want it to.”"
 msgstr ""
 "La risposta è intorno a te, Neo. E ti sta cercando. E presto ti troverà, se "
 "tu lo vorrai."
@@ -393,8 +396,8 @@ msgstr "– <i>Trinity</i>"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:89
 msgid ""
-"The matrices in Switch are matrices of coefficients of associated systems of"
-" linear equations. Consider the following linear system: <br/>"
+"The matrices in Switch are matrices of coefficients of associated systems of "
+"linear equations. Consider the following linear system: <br/>"
 msgstr ""
 "Le matrici, in Switch, sono matrici di coefficienti associati a sistemi di "
 "equazioni lineari. Considera il seguente sistema lineare: <br/>"
@@ -430,8 +433,7 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:172
 msgid ""
-"In this simple case, this was the only step needed to solve the system. "
-"<br/>"
+"In this simple case, this was the only step needed to solve the system. <br/>"
 msgstr ""
 "In questo caso semplice, questo era l'unico passo necessario per risolvere "
 "il sistema. <br/>"
@@ -446,12 +448,12 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:200
 msgid ""
-" ... until we end up with the so called reduced <a "
-"href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>. "
+" ... until we end up with the so called reduced <a href='https://en."
+"wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>. "
 msgstr ""
-"... fino a quando si arriva a ciò che è definito riduzione <a "
-"href='https://it.wikipedia.org/wiki/Metodo_di_eliminazione_di_Gauss'> "
-"riduzione a scalini</a>."
+"... fino a quando si arriva a ciò che è definito riduzione <a href='https://"
+"it.wikipedia.org/wiki/Metodo_di_eliminazione_di_Gauss'> riduzione a scalini</"
+"a>."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:215
 msgid "And ... action"
@@ -462,8 +464,8 @@ msgid ""
 "In Switch, this all is even more hassle-free. I think it's time to try it "
 "yourself."
 msgstr ""
-"In Switch, tutto questo è ancora più facile. Penso che sia il momento che tu"
-" provi da solo."
+"In Switch, tutto questo è ancora più facile. Penso che sia il momento che tu "
+"provi da solo."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:226
 msgid "Row operations:<br/>"
@@ -475,12 +477,11 @@ msgstr "In Switch, ci sono due modi per risolvere le matrici:<br/>"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:249
 msgid ""
-"1. Transform the matrix into upper <a "
-"href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a> "
+"1. Transform the matrix into upper <a href='https://en.wikipedia.org/wiki/"
+"Triangular_matrix'>triangular form</a> "
 msgstr ""
-"1. Trasformare la matrice superiore in <a "
-"href='https://it.wikipedia.org/wiki/Matrice_triangolare'>forma "
-"triangolare</a>"
+"1. Trasformare la matrice superiore in <a href='https://it.wikipedia.org/"
+"wiki/Matrice_triangolare'>forma triangolare</a>"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:273
 msgid ""
@@ -506,11 +507,11 @@ msgstr "Penso che sia il momento che tu provi da solo."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:333
 msgid ""
-"As soon as you think you got it, you can <a href='#'>check your "
-"solution</a>. "
+"As soon as you think you got it, you can <a href='#'>check your solution</"
+"a>. "
 msgstr ""
-"Appena pensi di aver completato, puoi <a href='#'>verificare la "
-"soluzione</a>."
+"Appena pensi di aver completato, puoi <a href='#'>verificare la soluzione</"
+"a>."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:361
 msgid ""
