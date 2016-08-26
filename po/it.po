@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-26 15:00+0000\n"
+"POT-Creation-Date: 2016-08-26 20:45+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Gabriele Martelli <gabrielemartelli@tiscali.it>, 2016\n"
 "Language-Team: Italian (https://www.transifex.com/tim-sueberkrueb/"
@@ -451,7 +451,7 @@ msgstr "Nel nostro caso la soluzione x = 2, y = 1 soddisfa il sistema lineare."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:130
 msgid "How to solve a matrix"
-msgstr "Come risolvere una matrice"
+msgstr "Risolvere una matrice"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:135
 msgid "There are multiple ways to solve a system of linear equations."
@@ -550,9 +550,8 @@ msgid ""
 " ... until we end up with the so called reduced <a href='https://en."
 "wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>."
 msgstr ""
-"... fino a quando si arriva a ciò che è definito riduzione <a href='https://"
-"it.wikipedia.org/wiki/Metodo_di_eliminazione_di_Gauss'> riduzione a scalini</"
-"a>."
+"... fino a quando si arriva a ciò che è definito <a href='https://it."
+"wikipedia.org/wiki/Metodo_di_eliminazione_di_Gauss'> riduzione a scalini</a>."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:200
 msgid ""
@@ -575,8 +574,8 @@ msgid ""
 "In Switch, this all is even more hassle-free. I think it's time to try it "
 "yourself."
 msgstr ""
-"In Switch, tutto questo è ancora più facile. Penso che sia il momento che tu "
-"provi da solo."
+"In Switch, tutto questo è ancora più facilitato. Penso che sia il momento "
+"che tu provi da solo."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:225
 msgid "Row operations:"
