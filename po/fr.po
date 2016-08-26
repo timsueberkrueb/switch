@@ -2,19 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-26 09:40+0000\n"
+"POT-Creation-Date: 2016-08-26 15:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Language-Team: French (https://www.transifex.com/tim-sueberkrueb/teams/66307/fr/)\n"
+"Language-Team: French (https://www.transifex.com/tim-sueberkrueb/teams/66307/"
+"fr/)\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: fr\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:8
@@ -33,8 +34,7 @@ msgstr ""
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:62
 #, qt-format
 msgid ""
-"Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and "
-"QA."
+"Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and QA."
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:70
@@ -386,8 +386,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:70
 msgid ""
-"”The answer is out there, Neo. It's looking for you, and it will find you if"
-" you want it to.”"
+"”The answer is out there, Neo. It's looking for you, and it will find you if "
+"you want it to.”"
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:85
@@ -396,8 +396,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:89
 msgid ""
-"The matrices in Switch are matrices of coefficients of associated systems of"
-" linear equations. Consider the following linear system: "
+"The matrices in Switch are matrices of coefficients of associated systems of "
+"linear equations. Consider the following linear system: "
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:92
@@ -436,9 +436,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:136
 msgid ""
-"In Switch you will use <a "
-"href='https://en.wikipedia.org/wiki/Gaussian_elimination'>Gaussian "
-"elimination</a>, also known as row reduction."
+"In Switch you will use <a href='https://en.wikipedia.org/wiki/"
+"Gaussian_elimination'>Gaussian elimination</a>, also known as row reduction."
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:137
@@ -461,8 +460,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:141
 msgid ""
-"The goal of all this is to eliminate variables by setting the coefficient to"
-" zero. Remember our example:"
+"The goal of all this is to eliminate variables by setting the coefficient to "
+"zero. Remember our example:"
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:157
@@ -473,22 +472,20 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:158
 msgid ""
-"To achieve this, we'll multiply the first row by -1 and add it to the second"
-" row. The result:"
+"To achieve this, we'll multiply the first row by -1 and add it to the second "
+"row. The result:"
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:172
-msgid ""
-"In this simple case, this was the only step needed to solve the system."
+msgid "In this simple case, this was the only step needed to solve the system."
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:173
 msgid ""
-"Our matrix is transformed into upper <a "
-"href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a>, "
-"which means that all matix entries below the <a "
-"href='https://en.wikipedia.org/wiki/Main_diagonal'>main diagonal</a> are "
-"zero."
+"Our matrix is transformed into upper <a href='https://en.wikipedia.org/wiki/"
+"Triangular_matrix'>triangular form</a>, which means that all matix entries "
+"below the <a href='https://en.wikipedia.org/wiki/Main_diagonal'>main "
+"diagonal</a> are zero."
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:174
@@ -507,8 +504,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:199
 msgid ""
-" ... until we end up with the so called reduced <a "
-"href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>."
+" ... until we end up with the so called reduced <a href='https://en."
+"wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>."
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:200
@@ -557,8 +554,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:231
 msgid ""
-"• Hold and move the slider increase/decrease the value of the mutliplicator,"
-" release to multiply"
+"• Hold and move the slider increase/decrease the value of the mutliplicator, "
+"release to multiply"
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:237
@@ -567,9 +564,8 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:248
 msgid ""
-"1. Transform the matrix into upper <a "
-"href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a> "
-"using the row operations."
+"1. Transform the matrix into upper <a href='https://en.wikipedia.org/wiki/"
+"Triangular_matrix'>triangular form</a> using the row operations."
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:249
@@ -593,15 +589,14 @@ msgid "↳ recommended for smaller matrices"
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:272
-msgid ""
-"2. Simplify the matrix as much as possible by using the row operations."
+msgid "2. Simplify the matrix as much as possible by using the row operations."
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:273
 msgid ""
-"You will end up with the so called reduced <a "
-"href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a> "
-"and Switch will detect that the matrix is solved."
+"You will end up with the so called reduced <a href='https://en.wikipedia.org/"
+"wiki/Row_echelon_form'>row echelon form</a> and Switch will detect that the "
+"matrix is solved."
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:274
@@ -634,8 +629,7 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:331
 msgid ""
-"As soon as you think you got it, you can <a href='#'>check your "
-"solution</a>."
+"As soon as you think you got it, you can <a href='#'>check your solution</a>."
 msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:332

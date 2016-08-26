@@ -2,20 +2,21 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-# 
+#
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-26 09:40+0000\n"
+"POT-Creation-Date: 2016-08-26 15:00+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Tim Süberkrüb <tim.sueberkrueb@gmail.com>, 2016\n"
-"Language-Team: Italian (https://www.transifex.com/tim-sueberkrueb/teams/66307/it/)\n"
+"Last-Translator: Gabriele Martelli <gabrielemartelli@tiscali.it>, 2016\n"
+"Language-Team: Italian (https://www.transifex.com/tim-sueberkrueb/"
+"teams/66307/it/)\n"
+"Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: it\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:8
@@ -34,8 +35,7 @@ msgstr "Crediti"
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:62
 #, qt-format
 msgid ""
-"Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and "
-"QA."
+"Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and QA."
 msgstr ""
 "Grazie a <a href='%1'>Stuart Langridge</a> per le prove, i suggerimenti per "
 "la grafica ed i controlli di qualità."
@@ -403,8 +403,8 @@ msgstr "Cos'è Matrix?"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:70
 msgid ""
-"”The answer is out there, Neo. It's looking for you, and it will find you if"
-" you want it to.”"
+"”The answer is out there, Neo. It's looking for you, and it will find you if "
+"you want it to.”"
 msgstr ""
 "La risposta è intorno a te, Neo. E ti sta cercando. E presto ti troverà, se "
 "tu lo vorrai."
@@ -415,8 +415,8 @@ msgstr "– <i>Trinity</i>"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:89
 msgid ""
-"The matrices in Switch are matrices of coefficients of associated systems of"
-" linear equations. Consider the following linear system: "
+"The matrices in Switch are matrices of coefficients of associated systems of "
+"linear equations. Consider the following linear system: "
 msgstr ""
 "Le matrici, in Switch, sono matrici di coefficienti associati a sistemi di "
 "equazioni lineari. Considera il seguente sistema lineare:"
@@ -447,8 +447,7 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:119
 msgid "In our case the solution x=2, y=1 satisfies the linear system."
-msgstr ""
-"Nel nostro caso la soluzione x = 2, y = 1 soddisfa il sistema lineare."
+msgstr "Nel nostro caso la soluzione x = 2, y = 1 soddisfa il sistema lineare."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:130
 msgid "How to solve a matrix"
@@ -460,13 +459,12 @@ msgstr "Ci sono molti metodi per risolvere sistemi di matrici lineari."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:136
 msgid ""
-"In Switch you will use <a "
-"href='https://en.wikipedia.org/wiki/Gaussian_elimination'>Gaussian "
-"elimination</a>, also known as row reduction."
+"In Switch you will use <a href='https://en.wikipedia.org/wiki/"
+"Gaussian_elimination'>Gaussian elimination</a>, also known as row reduction."
 msgstr ""
-"In Switch userai il <a "
-"href='https://it.wikipedia.org/wiki/Metodo_di_eliminazione_di_Gauss'>Metodo "
-"di eliminazione di Gauss</a>, conosciuto anche come MEG."
+"In Switch userai il <a href='https://it.wikipedia.org/wiki/"
+"Metodo_di_eliminazione_di_Gauss'>Metodo di eliminazione di Gauss</a>, "
+"conosciuto anche come MEG."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:137
 msgid ""
@@ -479,21 +477,20 @@ msgstr ""
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:138
 msgid "Those actions are called row operations. In Switch you are able to ..."
 msgstr ""
-"Tali azioni sono chiamate operazioni di riga. In Switch si è in grado di ..."
-" "
+"Tali azioni sono chiamate operazioni di riga. In Switch si è in grado di ... "
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:139
 msgid "... multiply a row by a number"
-msgstr ""
+msgstr "... Moltiplicare una riga per un numero"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:140
 msgid "... add one row to another"
-msgstr ""
+msgstr "... addizionare una riga ad un'altra"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:141
 msgid ""
-"The goal of all this is to eliminate variables by setting the coefficient to"
-" zero. Remember our example:"
+"The goal of all this is to eliminate variables by setting the coefficient to "
+"zero. Remember our example:"
 msgstr ""
 "L'obiettivo di tutto questo è quello di eliminare variabili, portando il "
 "coefficiente a zero. Ricorda il nostro esempio:"
@@ -508,32 +505,29 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:158
 msgid ""
-"To achieve this, we'll multiply the first row by -1 and add it to the second"
-" row. The result:"
+"To achieve this, we'll multiply the first row by -1 and add it to the second "
+"row. The result:"
 msgstr ""
 "Per raggiungere questo obiettivo, moltiplichiamo la prima fila per -1 e la "
 "aggiungiamo alla seconda fila. Il risultato è:"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:172
-msgid ""
-"In this simple case, this was the only step needed to solve the system."
+msgid "In this simple case, this was the only step needed to solve the system."
 msgstr ""
 "In questo caso semplice, questo era l'unico passo necessario per risolvere "
 "il sistema."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:173
 msgid ""
-"Our matrix is transformed into upper <a "
-"href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a>, "
-"which means that all matix entries below the <a "
-"href='https://en.wikipedia.org/wiki/Main_diagonal'>main diagonal</a> are "
-"zero."
+"Our matrix is transformed into upper <a href='https://en.wikipedia.org/wiki/"
+"Triangular_matrix'>triangular form</a>, which means that all matix entries "
+"below the <a href='https://en.wikipedia.org/wiki/Main_diagonal'>main "
+"diagonal</a> are zero."
 msgstr ""
-"La nostra matrice è trasformata in <a "
-"href='https://it.wikipedia.org/wiki/Matrice_triangolare'> forma triangolare "
-"</a>, come sopra, il che significa che tutte le entità sotto la <https a "
-"href = 'https://it.wikipedia.org/wiki/Diagonale_principale'>diagonale "
-"principale</a> sono pari a zero."
+"La nostra matrice è trasformata in <a href='https://it.wikipedia.org/wiki/"
+"Matrice_triangolare'> forma triangolare </a>, come sopra, il che significa "
+"che tutte le entità sotto la <https a href = 'https://it.wikipedia.org/wiki/"
+"Diagonale_principale'>diagonale principale</a> sono pari a zero."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:174
 msgid "We can now finish solving the matrix in your head:"
@@ -553,12 +547,12 @@ msgstr ""
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:199
 msgid ""
-" ... until we end up with the so called reduced <a "
-"href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>."
+" ... until we end up with the so called reduced <a href='https://en."
+"wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>."
 msgstr ""
-"... fino a quando si arriva a ciò che è definito riduzione <a "
-"href='https://it.wikipedia.org/wiki/Metodo_di_eliminazione_di_Gauss'> "
-"riduzione a scalini</a>."
+"... fino a quando si arriva a ciò che è definito riduzione <a href='https://"
+"it.wikipedia.org/wiki/Metodo_di_eliminazione_di_Gauss'> riduzione a scalini</"
+"a>."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:200
 msgid ""
@@ -581,8 +575,8 @@ msgid ""
 "In Switch, this all is even more hassle-free. I think it's time to try it "
 "yourself."
 msgstr ""
-"In Switch, tutto questo è ancora più facile. Penso che sia il momento che tu"
-" provi da solo."
+"In Switch, tutto questo è ancora più facile. Penso che sia il momento che tu "
+"provi da solo."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:225
 msgid "Row operations:"
@@ -590,17 +584,16 @@ msgstr "Operazioni di riga"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:226
 msgid "Add"
-msgstr ""
+msgstr "Somma"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:227
 msgid "• You can drag and drop a row onto another to add it"
 msgstr ""
-"• È possibile trascinare e rilasciare una riga sopra un'altra per "
-"aggiungerla"
+"• È possibile trascinare e rilasciare una riga sopra un'altra per aggiungerla"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:228
 msgid "Multiply"
-msgstr ""
+msgstr "Multipli"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:229
 msgid "• Tap on a row to select it"
@@ -612,8 +605,8 @@ msgstr "• Apparirà lo strumento di moltiplicazione"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:231
 msgid ""
-"• Hold and move the slider increase/decrease the value of the mutliplicator,"
-" release to multiply"
+"• Hold and move the slider increase/decrease the value of the mutliplicator, "
+"release to multiply"
 msgstr ""
 "• Tocca e trascina il cursore per aumentare / diminuire il valore della "
 "moltiplicazione, al rilascio sarà mostrato il risultato"
@@ -624,13 +617,11 @@ msgstr "In Switch, ci sono due modi per risolvere le matrici:"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:248
 msgid ""
-"1. Transform the matrix into upper <a "
-"href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a> "
-"using the row operations."
+"1. Transform the matrix into upper <a href='https://en.wikipedia.org/wiki/"
+"Triangular_matrix'>triangular form</a> using the row operations."
 msgstr ""
-"1. Trasforma la matrice nella soprastante <a "
-"href='https://it.wikipedia.org/wiki/Matrice_triangolare'>forma "
-"triangolare</a>usando le operazioni di riga. "
+"1. Trasforma la matrice nella soprastante <a href='https://it.wikipedia.org/"
+"wiki/Matrice_triangolare'>forma triangolare</a>usando le operazioni di riga. "
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:249
 msgid "Click on the 'Solve' button when you think you know the solution."
@@ -654,20 +645,19 @@ msgid "↳ recommended for smaller matrices"
 msgstr "↳ consigliato per le matrici più piccole"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:272
-msgid ""
-"2. Simplify the matrix as much as possible by using the row operations."
+msgid "2. Simplify the matrix as much as possible by using the row operations."
 msgstr ""
 "2. Semplificare la matrice il più possibile usando le operazioni di riga."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:273
 msgid ""
-"You will end up with the so called reduced <a "
-"href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a> "
-"and Switch will detect that the matrix is solved."
+"You will end up with the so called reduced <a href='https://en.wikipedia.org/"
+"wiki/Row_echelon_form'>row echelon form</a> and Switch will detect that the "
+"matrix is solved."
 msgstr ""
-"Ti troverai con la cosiddetta forma ridotta <a "
-"href='https://it.wikipedia.org/wiki/Metodo_di_eliminazione_di_Gauss#Matrice_a_scalini'>a"
-" scalini</a> e Switch rileverà che la matrice è risolta."
+"Ti troverai con la cosiddetta forma ridotta <a href='https://it.wikipedia."
+"org/wiki/Metodo_di_eliminazione_di_Gauss#Matrice_a_scalini'>a scalini</a> e "
+"Switch rileverà che la matrice è risolta."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:274
 msgid "⊕ easy on the brain (no need for mental arithmetic)"
@@ -699,19 +689,18 @@ msgstr "Penso che sia il momento che tu provi da solo."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:331
 msgid ""
-"As soon as you think you got it, you can <a href='#'>check your "
-"solution</a>."
+"As soon as you think you got it, you can <a href='#'>check your solution</a>."
 msgstr ""
-"Appena pensi di aver completato, puoi <a href='#'>verificare la "
-"soluzione</a>."
+"Appena pensi di aver completato, puoi <a href='#'>verificare la soluzione</"
+"a>."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:332
 msgid ""
 "Or, alternatively, simplify it to the very end and Switch will handle the "
 "rest."
 msgstr ""
-"Oppure, in alternativa, semplificare fino alla fine e Switch si occuperà del"
-" resto."
+"Oppure, in alternativa, semplificare fino alla fine e Switch si occuperà del "
+"resto."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:359
 msgid ""
@@ -726,8 +715,8 @@ msgid ""
 "The reason for this is simply that there will be more than just 3 variables "
 "in the game and this naming scheme is more consistent therefore."
 msgstr ""
-"La ragione di questo è semplicemente il fatto che ci saranno più 3 variabili"
-" in gioco e questo schema è conseguentemente più coerente."
+"La ragione di questo è semplicemente il fatto che ci saranno più 3 variabili "
+"in gioco e questo schema è conseguentemente più coerente."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:366
 msgid "No idea what to do? <a href='#'>Go back to the explanations</a>."
