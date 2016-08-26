@@ -2,21 +2,20 @@
 # Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
-#
+# 
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-25 20:29+0000\n"
+"POT-Creation-Date: 2016-08-26 09:40+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Tim Süberkrüb <tim.sueberkrueb@gmail.com>, 2016\n"
-"Language-Team: German (https://www.transifex.com/tim-sueberkrueb/teams/66307/"
-"de/)\n"
-"Language: de\n"
+"Language-Team: German (https://www.transifex.com/tim-sueberkrueb/teams/66307/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:8
@@ -26,17 +25,20 @@ msgstr "Über"
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:51
 msgid "A simple game about linear equations"
-msgstr ""
+msgstr "Ein einfaches Spiel über Matrizen"
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:57
 msgid "Credits"
-msgstr ""
+msgstr "Danksagungen"
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:62
 #, qt-format
 msgid ""
-"Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and QA."
+"Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and "
+"QA."
 msgstr ""
+"Vielen Dank an <a href='%1'>Stuart Langridge</a> für Designideen, testen und"
+" Qualitätssicherung."
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:70
 #, qt-format
@@ -44,642 +46,705 @@ msgid ""
 "Thanks to <a href='%1'>Sam Hewitt</a> for creating the <a href='%2'>Ubuntu "
 "Icon Resource Kit</a> which was used to create the application icon."
 msgstr ""
+"Vielen Dank an<a href='%1'>Sam Hewitt</a> für die Erstellung des <a "
+"href='%2'>Ubuntu Icon Resource Kit</a>, das als Vorlage für das "
+"Anwendungssymbol diente."
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:80
 msgid "License and Copyright"
-msgstr ""
+msgstr "Lizenz und Copyright"
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:85
 #, qt-format
 msgid "Source code available on <a href='%1'>GitHub</a>."
-msgstr ""
+msgstr "Quellcode auf <a href='%1'>GitHub</a> verfügbar."
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:105
 #: /home/tim/Dev/Projects/switch/src/qml/GameCompletedOverlay.qml:62
 msgid "Rate"
-msgstr ""
+msgstr "Bewerten"
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:113
 msgid "Report bug"
-msgstr ""
+msgstr "Bug melden"
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:121
 msgid "Contribute"
-msgstr ""
+msgstr "Mitwirken"
 
 #: /home/tim/Dev/Projects/switch/src/qml/FailureOverlay.qml:11
 msgid "Nevermind, moving on!"
-msgstr ""
+msgstr "Macht nichts, weiter so!"
 
 #: /home/tim/Dev/Projects/switch/src/qml/FailureOverlay.qml:12
 msgid "Don't worry!"
-msgstr ""
+msgstr "Ärgere dich nicht!"
 
 #: /home/tim/Dev/Projects/switch/src/qml/FailureOverlay.qml:13
 msgid "Keep your head up!"
-msgstr ""
+msgstr "Kopf hoch!"
 
 #: /home/tim/Dev/Projects/switch/src/qml/FailureOverlay.qml:14
 msgid "Hold your head up!"
-msgstr ""
+msgstr "Kopf hoch!"
 
 #: /home/tim/Dev/Projects/switch/src/qml/FailureOverlay.qml:15
 msgid "Go on!"
-msgstr ""
+msgstr "Mach weiter!"
 
 #: /home/tim/Dev/Projects/switch/src/qml/FailureOverlay.qml:30
 msgid "Failure"
-msgstr ""
+msgstr "Fehler"
 
 #: /home/tim/Dev/Projects/switch/src/qml/FailureOverlay.qml:36
 #, qt-format
 msgid "%1/%2 correct"
-msgstr ""
+msgstr "%1/%2 richtig"
 
 #: /home/tim/Dev/Projects/switch/src/qml/FailureOverlay.qml:42
 #, qt-format
 msgid "<b>Your solution</b>: %1"
-msgstr ""
+msgstr "<b>Deine Lösung</b>: %1"
 
 #: /home/tim/Dev/Projects/switch/src/qml/FailureOverlay.qml:47
 #, qt-format
 msgid "<b>Correct solution</b>: %1"
-msgstr ""
+msgstr "<b>Korrekte Lösung</b>: %1"
 
 #: /home/tim/Dev/Projects/switch/src/qml/FailureOverlay.qml:63
 #: /home/tim/Dev/Projects/switch/src/qml/SuccessOverlay.qml:85
 msgid "Tap anywhere to continue"
-msgstr ""
+msgstr "Klicke irgendwohin, um fortzufahren."
 
 #: /home/tim/Dev/Projects/switch/src/qml/GameCompletedOverlay.qml:31
 msgid "Back to game"
-msgstr ""
+msgstr "Zurück zum Spiel"
 
 #: /home/tim/Dev/Projects/switch/src/qml/GameCompletedOverlay.qml:51
 msgid "You made it!"
-msgstr ""
+msgstr "Geschafft!"
 
 #: /home/tim/Dev/Projects/switch/src/qml/GameCompletedOverlay.qml:57
 msgid "Thanks so much for playing."
-msgstr ""
+msgstr "Vielen Dank fürs spielen!"
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:10
 #: /home/tim/Dev/Projects/switch/src/qml/LevelPage.qml:96
 #: /home/tim/Dev/Projects/switch/src/qml/MainPage.qml:32
 msgid "Help"
-msgstr ""
+msgstr "Hilfe"
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:37
 msgid "What is Switch?"
-msgstr ""
+msgstr "Was ist Switch?"
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:42
+#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:28
 msgid ""
 "Switch is a game about solving systems of linear equations using the "
 "Gaussian elimination of matrices."
 msgstr ""
+"Switch ist ein Spiel über das Lösen von linearen Gleichungssystemen mit "
+"Hilfe des Gauß-Verfahren."
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:48
 msgid "WTF?"
-msgstr ""
+msgstr "Seids narrisch? "
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:54
-msgid "Errrm, yeah 😄 "
-msgstr ""
+msgid "Errrm, yeah 😄"
+msgstr "Ähm, ja 😄"
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:55
-msgid "Actually, I'm not sure if you can call this 'a game' at all ... "
+msgid "Actually, I'm not sure if you can call this 'a game' at all ..."
 msgstr ""
+"Ich bin mir eigentlich nicht sicher, ob man das wirklich ein 'Spiel' nennen "
+"kann ..."
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:56
 msgid ""
 "However, if you're a student and you want to practise the Gaussian "
-"elimination algorithm a bit this app can help you. "
+"elimination algorithm a bit this app can help you."
 msgstr ""
+"Wie auch immer, wenn du ein Schüler bist und das Gauß-Verfahren üben "
+"möchtest, kann diese Anwendung dir helfen."
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:57
 msgid ""
 "You could also see this as a refreshingly different way to prepare for an "
-"exam 😉. It's basically up to you to define this app's purpose. "
+"exam 😉. It's basically up to you to define this app's purpose."
 msgstr ""
+"Du könntest es als einen erfrischend anderen Weg sehen, dich auf eine "
+"Prüfung vorzubereiten 😉. Es liegt an dir, den Sinn dieser Anwendung zu "
+"definieren."
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:58
 msgid ""
 "Of course, if you're not a student, Switch can still be a good way to train "
 "your mathematical skills."
 msgstr ""
+"Und auch wenn du kein Schüler bist, kannst du mit Switch deine Mathe-Skills "
+"auffrischen."
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:65
 msgid "OMG seriously?! Get me out of here!"
-msgstr ""
+msgstr "OMG ernsthaft?! Hilf mir hier raus!"
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:75
 msgid "How does it work?"
-msgstr ""
+msgstr "Wie macht man's?"
 
 #: /home/tim/Dev/Projects/switch/src/qml/HelpPage.qml:80
 msgid "Show the tutorial"
-msgstr ""
+msgstr "Öffne Tutorial"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:8
 msgid "Spoon boy"
-msgstr ""
+msgstr "Junge mit Löffel"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:9
 msgid "There is no spoon."
-msgstr ""
+msgstr "Es gibt keinen Löffel."
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:17
 msgid "Mouse"
-msgstr ""
+msgstr "Mouse"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:18
 msgid "So that's why chicken tastes like everything."
-msgstr ""
+msgstr "Wenn du die Augen zumachst, schmeckt es fast wie rohe Eier!"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:26
 msgid "Choi"
-msgstr ""
+msgstr "Choi"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:27
 msgid "You need to unplug, man."
-msgstr ""
+msgstr "Du brauchst mal 'ne Auszeit!"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:35
 msgid "Trinity"
-msgstr ""
+msgstr "Trinity"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:36
 msgid "Dodge this."
-msgstr ""
+msgstr "Nur eine Maschine. "
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:44
 msgid "Cypher"
-msgstr ""
+msgstr "Cypher"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:45
 msgid "Ignorance is bliss."
-msgstr ""
+msgstr "Unwissenheit ist ein Segen."
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:53
 msgid "Switch"
-msgstr ""
+msgstr "Switch"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:54
 msgid "Our way... or the highway."
-msgstr ""
+msgstr "Du steigst ein oder Du steigst aus."
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:62
 msgid "Morpheus"
-msgstr ""
+msgstr "Morpheus"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:63
 msgid "The Matrix is everywhere."
-msgstr ""
+msgstr "Die Matrix ist ein System, Neo."
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:71
 msgid "Agent Smith"
-msgstr ""
+msgstr "Agent Smith"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:72
 msgid "Never send a human to do a machine's job."
-msgstr ""
+msgstr "Nimm nie einen Menschen, wenn du eine Maschine dafür nehmen kannst."
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:80
 msgid "Neo"
-msgstr ""
+msgstr "Neo"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:81
 msgid "Whoa. Déjà vu."
-msgstr ""
+msgstr "Ein Déjà vu."
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:89
 msgid "Merovingian"
-msgstr ""
+msgstr "Merowinger"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:90
 msgid "I love the French language."
-msgstr ""
+msgstr "Ich liebe französischen Wein."
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:98
 msgid "Oracle"
-msgstr ""
+msgstr "Orakel"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:99
 msgid "I love candy."
-msgstr ""
+msgstr "Ich liebe Süßigkeiten."
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:107
 msgid "The Architect"
-msgstr ""
+msgstr "Der Architekt"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:108
 msgid "I've been waiting for you."
-msgstr ""
+msgstr "Ich habe auf dich gewartet."
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelPage.qml:51
 #, qt-format
 msgid "Level '%1'"
-msgstr ""
+msgstr "Level '%1'"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelPage.qml:55
 msgid "Back"
-msgstr ""
+msgstr "Zurück"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelPage.qml:86
 msgid "Generate new"
-msgstr ""
+msgstr "Neu erstellen"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelPage.qml:91
 msgid "Surrender"
-msgstr ""
+msgstr "Kapitulation"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelPage.qml:152
 #: /home/tim/Dev/Projects/switch/src/qml/SolveWidget.qml:33
 #: /home/tim/Dev/Projects/switch/src/qml/SolveWidget.qml:81
 msgid "Solve"
-msgstr ""
+msgstr "Lösen"
 
 #: /home/tim/Dev/Projects/switch/src/qml/MainPage.qml:39
 msgid "Stats"
-msgstr ""
+msgstr "Statistik"
 
 #: /home/tim/Dev/Projects/switch/src/qml/MainPage.qml:115
 msgid "Locked"
-msgstr ""
+msgstr "Gesperrt"
 
 #: /home/tim/Dev/Projects/switch/src/qml/MainPage.qml:125
 msgid "Earn all stars in previous levels to unlock."
-msgstr ""
+msgstr "Verdiene alle Sterne in den vorherigen Leveln."
 
 #: /home/tim/Dev/Projects/switch/src/qml/MultiplyHeader.qml:61
 msgid "Move the slider to multiply"
-msgstr ""
+msgstr "Multiplizieren"
 
 #: /home/tim/Dev/Projects/switch/src/qml/SolveWidget.qml:104
 msgid "Hide"
-msgstr ""
+msgstr "Verstecken"
 
 #: /home/tim/Dev/Projects/switch/src/qml/StatsPage.qml:24
 #, qt-format
 msgid "Matrices solved: %1"
-msgstr ""
+msgstr "Matrizen gelöst: %1"
 
 #: /home/tim/Dev/Projects/switch/src/qml/StatsPage.qml:28
 #, qt-format
 msgid "Failure count: %1"
-msgstr ""
+msgstr "Fehlerzahl: %1"
 
 #: /home/tim/Dev/Projects/switch/src/qml/StatsPage.qml:32
 #, qt-format
 msgid "Success rate: %1%"
-msgstr ""
+msgstr "Erfolgsrate: %1%"
 
 #: /home/tim/Dev/Projects/switch/src/qml/SuccessOverlay.qml:24
 msgid "Success"
-msgstr ""
+msgstr "Erfolg"
 
 #: /home/tim/Dev/Projects/switch/src/qml/SuccessOverlay.qml:31
 msgid "Matrix solved."
-msgstr ""
+msgstr "Matrix gelöst."
 
 #: /home/tim/Dev/Projects/switch/src/qml/SuccessOverlay.qml:37
 #, qt-format
 msgid "Solution: %1"
-msgstr ""
+msgstr "Solution: %1"
 
 #: /home/tim/Dev/Projects/switch/src/qml/SuccessOverlay.qml:44
 #, qt-format
 msgid "Solve %1 more to complete the level."
-msgstr ""
+msgstr "Löse noch %1, um das Level abzuschließen."
 
 #: /home/tim/Dev/Projects/switch/src/qml/SuccessOverlay.qml:52
 #, qt-format
 msgid "<b>Level '%1' unlocked.</b>"
-msgstr ""
+msgstr "<b>Level '%1' entsperrt.</b>"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialPage.qml:13
 msgid "Tutorial"
-msgstr ""
+msgstr "Tutorial"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:14
 msgid "Hey! Welcome to Switch."
-msgstr ""
-
-#: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:28
-msgid ""
-"Switch is a game about solving systems of linear equations using the "
-"Gaussian elimination of matrices. <br/>"
-msgstr ""
+msgstr "Willkommen zu Switch!"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:29
 msgid ""
 "Yeah, I know. That sounds scary. It doesn't really sound like a lot of fun, "
 "rather like one of <i>those</i> maths lessons, right? 😉"
 msgstr ""
+"Ja, ich weiß. Das klingt schrecklich. Es klingt nicht nach besonders viel "
+"Spaß, eher nach einer <i>dieser</i> Mathestunden, richtig? 😉"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:39
 msgid "”Then let us hope that I was wrong”"
-msgstr ""
+msgstr "”Dann lass uns hoffen, dass ich falsch lag”"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:54
 msgid "– <i>Morpheus</i>"
-msgstr ""
+msgstr "– <i>Morpheus</i>"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:63
 msgid "What is the matrix?"
-msgstr ""
+msgstr "Was ist die Matrix?"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:70
 msgid ""
-"”The answer is out there, Neo. It's looking for you, and it will find you if "
-"you want it to.”"
+"”The answer is out there, Neo. It's looking for you, and it will find you if"
+" you want it to.”"
 msgstr ""
+"Die Antwort ist irgendwo da draußen, sie ist auf der Suche nach dir und sie "
+"wird dich finden, wenn DU es willst."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:85
 msgid "– <i>Trinity</i>"
-msgstr ""
+msgstr "– <i>Trinity</i>"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:89
 msgid ""
-"The matrices in Switch are matrices of coefficients of associated systems of "
-"linear equations. Consider the following linear system: <br/>"
+"The matrices in Switch are matrices of coefficients of associated systems of"
+" linear equations. Consider the following linear system: "
 msgstr ""
+"Die Matrizen in Switch sind Koeffizientenmatrixen eines zugehörigen linearen"
+" Gleichungssystems. Stelle dir folgendes lineare Gleichungssystem vor: "
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:92
-msgid "Now we're removing all the clutter ... <br/>"
-msgstr ""
+msgid "Now we're removing all the clutter ..."
+msgstr "Jetzt entfernen wir den überflüssigen Teil ..."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:106
 msgid "... and we get a matrix form like the one above."
-msgstr ""
+msgstr "... und wir erhalten eine Matrixform wie die obige."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:112
 msgid "Solution?"
-msgstr ""
+msgstr "Lösung?"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:117
-msgid "In Switch, all matrices have exactly one correct solution. "
-msgstr ""
+msgid "In Switch, all matrices have exactly one correct solution."
+msgstr "In Switch haben alle Matrizen genau eine Lösung."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:118
 msgid ""
 "A solution is an assignment of values to the variables (x, y) such that all "
-"equations are correct. "
+"equations are correct."
 msgstr ""
+"Eine Lösung ist die Menge der Werte der Variablen (x, y), die das "
+"Gleichungssystem eindeutig lösen."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:119
 msgid "In our case the solution x=2, y=1 satisfies the linear system."
-msgstr ""
+msgstr "In unserem Fall löst die Lösung x=2, y=1 das Gleichungssystem."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:130
 msgid "How to solve a matrix"
-msgstr ""
+msgstr "Das Lösen einer Matrix"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:135
-msgid "There are multiple ways to solve a system of linear equations. "
-msgstr ""
+msgid "There are multiple ways to solve a system of linear equations."
+msgstr "Es gibt mehrere Ansätze, ein lineares Gleichungssystem zu lösen. "
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:136
 msgid ""
-"In Switch you will use <a href='https://en.wikipedia.org/wiki/"
-"Gaussian_elimination'>Gaussian elimination</a>, also known as row reduction. "
+"In Switch you will use <a "
+"href='https://en.wikipedia.org/wiki/Gaussian_elimination'>Gaussian "
+"elimination</a>, also known as row reduction."
 msgstr ""
+"In Switch wirst du das <a "
+"href='https://de.wikipedia.org/wiki/Gau%C3%9Fsches_Eliminationsverfahren'>Gaußsches"
+" Eliminationsverfahren</a> oder kurz Gauß-Verfahren anwenden. "
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:137
 msgid ""
 "Using the Gaussian elimination algorithm you can perform several actions on "
-"a matrix of coefficients. "
+"a matrix of coefficients."
 msgstr ""
+"Im Zuge des Gauß-Verfahren kannst du mehrere Operationen auf eine "
+"Koeffizientenmatrix anwenden. "
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:138
-msgid ""
-"Those actions are called row operations. In Switch you are able to ... <br/>"
-msgstr ""
+msgid "Those actions are called row operations. In Switch you are able to ..."
+msgstr "In Switch kannst du somit ..."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:139
-msgid "... multiply a row by a number<br/>"
-msgstr ""
+msgid "... multiply a row by a number"
+msgstr "... eine Zeile mit einer Zahl multiplizieren"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:140
-msgid "... add one row to another<br/>"
-msgstr ""
+msgid "... add one row to another"
+msgstr "... eine Zeile auf einen andere addieren"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:141
 msgid ""
-"The goal of all this is to eliminate variables by setting the coefficient to "
-"zero. Remember our example: <br/>"
+"The goal of all this is to eliminate variables by setting the coefficient to"
+" zero. Remember our example:"
 msgstr ""
+"Dabei ist es das Ziel, Variablen zu eliminieren, indem der Koeffizient "
+"gleich Null gesetzt wird. Nehmen wir unser Beispiel zur Hand:"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:157
 msgid ""
 "To solve this matrix, we would like to eliminate the x variable from the "
-"second row. "
+"second row."
 msgstr ""
+"Um diese Matrix zu lösen, wollen wir die x-Variable aus der zweiten Zeile "
+"eliminieren."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:158
 msgid ""
-"To achieve this, we'll multiply the first row by -1 and add it to the second "
-"row. The result:<br/>"
+"To achieve this, we'll multiply the first row by -1 and add it to the second"
+" row. The result:"
 msgstr ""
+"Dazu multiplizieren wir die erste Zeile mit -1 und addieren sie auf die "
+"zweite Zeile. Das Ergebnis:"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:172
 msgid ""
-"In this simple case, this was the only step needed to solve the system. <br/>"
+"In this simple case, this was the only step needed to solve the system."
 msgstr ""
+"In diesem einfachen Beispiel war das der einzige Schritt, der nötig war, um "
+"das System zu lösen."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:173
 msgid ""
-"Our matrix is transformed into upper <a href='https://en.wikipedia.org/wiki/"
-"Triangular_matrix'>triangular form</a>, which means that all matix entries "
-"below the <a href='https://en.wikipedia.org/wiki/Main_diagonal'>main "
-"diagonal</a> are zero. "
+"Our matrix is transformed into upper <a "
+"href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a>, "
+"which means that all matix entries below the <a "
+"href='https://en.wikipedia.org/wiki/Main_diagonal'>main diagonal</a> are "
+"zero."
 msgstr ""
+"Unsere Matrix ist in der <a "
+"href='https://de.wikipedia.org/wiki/Dreiecksmatrix'>Dreiecksform</a>. Das "
+"bedeutet, dass alle Einträge unter der <a "
+"href='https://de.wikipedia.org/wiki/Hauptdiagonale'>Hauptdiagonalen</a> "
+"gleich Null sind. "
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:174
-msgid "We can now finish solving the matrix in your head:<br/>"
-msgstr ""
+msgid "We can now finish solving the matrix in your head:"
+msgstr "Du kannst nun den Rest im Kopf lösen:"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:177
 msgid "Therefore: x = 2, y = 1"
-msgstr ""
+msgstr "Somit: x = 2, y = 1"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:185
 msgid ""
 "Alternatively we can continue to simplify the matrix using the row "
 "operations ..."
 msgstr ""
+"Alternativ können wir weiter die Matrix vereinfachen, indem wir die "
+"Operationen anwenden ..."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:199
 msgid ""
-" ... until we end up with the so called reduced <a href='https://en."
-"wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>. "
+" ... until we end up with the so called reduced <a "
+"href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>."
 msgstr ""
+" ... bis wir die sogenannte reduzierte  <a "
+"href='https://de.wikipedia.org/wiki/Lineares_Gleichungssystem#Stufenform.2C_Treppenform'>Stufenform</a>"
+" erreicht haben. "
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:200
 msgid ""
 "This means that in every row there is exactly one leading coefficient which "
-"is 1. "
+"is 1."
 msgstr ""
+"Das bedeutet, dass in jeder Zeile exakt ein Leitkoeffizient gleich 1 "
+"besteht. "
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:201
 msgid "All other entries in the same column are 0."
-msgstr ""
+msgstr "Alle andere Einträge in derselben Spalte sind Null."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:214
 msgid "And ... action"
-msgstr ""
+msgstr "Und los"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:219
 msgid ""
 "In Switch, this all is even more hassle-free. I think it's time to try it "
 "yourself."
 msgstr ""
+"In Switch ist das alles viel einfacher. Es ist Zeit, dass du es selbst "
+"ausprobierst."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:225
-msgid "Row operations:<br/>"
-msgstr ""
+msgid "Row operations:"
+msgstr "Zeilenoperationen:"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:226
-msgid "<u>Add:</u><br/>"
-msgstr ""
+msgid "Add"
+msgstr "Addieren"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:227
-msgid "• You can drag and drop a row onto another to add it<br/>"
+msgid "• You can drag and drop a row onto another to add it"
 msgstr ""
+"• Du kannst eine Zeile drücken, ziehen und auf eine andere fallen lassen, um"
+" sie zu addieren"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:228
-msgid "<u>Multiply</u><br/>"
-msgstr ""
+msgid "Multiply"
+msgstr "Multiplizieren"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:229
-msgid "• Tap on a row to select it<br/>"
-msgstr ""
+msgid "• Tap on a row to select it"
+msgstr "• Drücke auf eine Zeile, um sie auszuwählen"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:230
-msgid "• The multiply header will show<br/>"
-msgstr ""
+msgid "• The multiply header will show"
+msgstr "• Die Multiplizier-Funktion wird angezeigt"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:231
 msgid ""
-"• Hold and move the slider increase/decrease the value of the mutliplicator, "
-"release to multiply<br/>"
+"• Hold and move the slider increase/decrease the value of the mutliplicator,"
+" release to multiply"
 msgstr ""
+"• Bewege den Schieberegler, um den Wert des Faktors zu vergrößern oder zu "
+"verkleinern. Lasse los, um zu multiplizieren"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:237
-msgid "In Switch, there are two ways to solve a matrix:<br/>"
-msgstr ""
+msgid "In Switch, there are two ways to solve a matrix:"
+msgstr "In Switch kannst du eine Matrix auf zwei Arten lösen:"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:248
 msgid ""
-"1. Transform the matrix into upper <a href='https://en.wikipedia.org/wiki/"
-"Triangular_matrix'>triangular form</a> using the row operations. "
+"1. Transform the matrix into upper <a "
+"href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a> "
+"using the row operations."
 msgstr ""
+"1. Bringe die Matrix in die <a "
+"href='https://de.wikipedia.org/wiki/Dreiecksmatrix'>Dreiecksform</a>, in dem"
+" du die Zeilenoperationen anwendest. "
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:249
-msgid "Click on the 'Solve' button when you think you know the solution.<br/>"
+msgid "Click on the 'Solve' button when you think you know the solution."
 msgstr ""
+"Klicke auf den 'Lösen'-Knopf, wenn du denkst, dass du die Lösung weißt."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:250
-msgid "⊕ time efficient for small matrices<br/>"
-msgstr ""
+msgid "⊕ time efficient for small matrices"
+msgstr "⊕ Zeiteffizient für kleine Matrizen"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:251
-msgid "⊕ train your mental arithmetic skills<br/>"
-msgstr ""
+msgid "⊕ train your mental arithmetic skills"
+msgstr "⊕ Übe dich im Kopfrechnen"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:252
-msgid "⊖ difficult for bigger matrices<br/>"
-msgstr ""
+msgid "⊖ difficult for bigger matrices"
+msgstr "⊖ schwierig für größere Matrizen"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:253
 msgid "↳ recommended for smaller matrices"
-msgstr ""
+msgstr "↳ Empfohlen für kleine Matrizen"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:272
 msgid ""
-"2. Simplify the matrix as much as possible by using the row operations. "
-msgstr ""
+"2. Simplify the matrix as much as possible by using the row operations."
+msgstr "2. Vereinfache die Matrix bis es nicht mehr geht."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:273
 msgid ""
-"You will end up with the so called reduced <a href='https://en.wikipedia.org/"
-"wiki/Row_echelon_form'>row echelon form</a> and Switch will detect that the "
-"matrix is solved.<br/>"
+"You will end up with the so called reduced <a "
+"href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a> "
+"and Switch will detect that the matrix is solved."
 msgstr ""
+"Du wirst in der bereits erwähnten, reduzierten<a "
+"href='https://de.wikipedia.org/wiki/Lineares_Gleichungssystem#Stufenform.2C_Treppenform'>Stufenform</a>"
+" enden und Switch wird erkennen, dass die Matrix gelöst ist."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:274
-msgid "⊕ easy on the brain (no need for mental arithmetic)<br/>"
-msgstr ""
+msgid "⊕ easy on the brain (no need for mental arithmetic)"
+msgstr "⊕ verhältnismäßig einfach (kein Kopfrechnen nötig)"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:275
-msgid "⊖ wastefully time consuming for smaller matrices<br/>"
-msgstr ""
+msgid "⊖ wastefully time consuming for smaller matrices"
+msgstr "⊖ unnötig zeitaufwendig für kleinere Matrizen"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:276
 msgid "↳ recommended for big matrices"
-msgstr ""
+msgstr "↳ Empfohlen für große Matrizen"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:294
 msgid "”The problem is choice.”"
-msgstr ""
+msgstr "”Das Problem ist die Entscheidung.”"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:309
 msgid "– <i>Neo</i>"
-msgstr ""
+msgstr "– <i>Neo</i>"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:319
 msgid "Let's go"
-msgstr ""
+msgstr "Los geht's"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:324
 msgid "I think it's time to try it yourself."
-msgstr ""
+msgstr "Ich denke es ist Zeit, dass du es selbst ausprobierst. "
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:331
 msgid ""
-"As soon as you think you got it, you can <a href='#'>check your solution</"
-"a>. "
-msgstr ""
+"As soon as you think you got it, you can <a href='#'>check your "
+"solution</a>."
+msgstr "Sobald du die Lösung weißt, <a href='#'>überprüfe</a>."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:332
 msgid ""
 "Or, alternatively, simplify it to the very end and Switch will handle the "
 "rest."
 msgstr ""
+"Alternativ kannst du die Matrix bis zum Ende vereinfachen und Switch "
+"erledigt den Rest."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:359
 msgid ""
 "<u>Hint:</u> The variables in Switch are called X1, X2, X3 ... XN (e.g. "
-"instead of x, y, z). "
+"instead of x, y, z)."
 msgstr ""
+"<u>Hinweis:</u> Die Variablen in Switch lauten X1, X2, X3 ... XN (nicht z.B."
+" x, y, z)."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:360
 msgid ""
 "The reason for this is simply that there will be more than just 3 variables "
 "in the game and this naming scheme is more consistent therefore."
 msgstr ""
+"Der Grund dafür ist, dass es in dem Spiel einfach mehr als nur 3 Variablen "
+"gibt und die Benennung ist so konsistenter."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:366
 msgid "No idea what to do? <a href='#'>Go back to the explanations</a>."
-msgstr ""
+msgstr "Kein Plan? <a href='#'>Schau dir nochmal die Erklärungen an</a>."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:398
 msgid "Success!"
-msgstr ""
+msgstr "Erfolg!"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:399
 msgid "Are you ready for more?"
-msgstr ""
+msgstr "Bereit für mehr?"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:401
 msgid "Continue"
-msgstr ""
+msgstr "Weiter"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:415
 msgid "Hmmm ..."
-msgstr ""
+msgstr "Hmmm ..."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:416
 msgid "This is not the correct solution. Try again!"
-msgstr ""
+msgstr "Das ist nicht die richtige Lösung. Versuch es nochmal!"

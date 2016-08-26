@@ -25,7 +25,7 @@ Item {
                 }
 
                 Label {
-                    text: i18n.tr("Switch is a game about solving systems of linear equations using the Gaussian elimination of matrices. <br/>") +
+                    text: i18n.tr("Switch is a game about solving systems of linear equations using the Gaussian elimination of matrices.") + "<br/>" +
                           i18n.tr("Yeah, I know. That sounds scary. It doesn't really sound like a lot of fun, rather like one of <i>those</i> maths lessons, right? 😉")
                     width: parent.width
                     wrapMode: Text.WordWrap
@@ -86,10 +86,10 @@ Item {
                 }
 
                 Label {
-                    text: i18n.tr("The matrices in Switch are matrices of coefficients of associated systems of linear equations. Consider the following linear system: <br/>") +
+                    text: i18n.tr("The matrices in Switch are matrices of coefficients of associated systems of linear equations. Consider the following linear system: ") + "<br/>" +
                            "1) 1x + 1y = 3 <br/>" +
                            "2) 1x - 1y = 1 <br/>" +
-                           i18n.tr("Now we're removing all the clutter ... <br/>")
+                           i18n.tr("Now we're removing all the clutter ...") + "<br/>"
                     width: parent.width
                     wrapMode: Text.WordWrap
                 }
@@ -114,8 +114,8 @@ Item {
                 }
 
                 Label {
-                    text: i18n.tr("In Switch, all matrices have exactly one correct solution. ") +
-                          i18n.tr("A solution is an assignment of values to the variables (x, y) such that all equations are correct. ") +
+                    text: i18n.tr("In Switch, all matrices have exactly one correct solution.") + " " +
+                          i18n.tr("A solution is an assignment of values to the variables (x, y) such that all equations are correct.") + " " +
                           i18n.tr("In our case the solution x=2, y=1 satisfies the linear system.")
                     width: parent.width
                     wrapMode: Text.WordWrap
@@ -132,13 +132,13 @@ Item {
                 }
 
                 Label {
-                    text: i18n.tr("There are multiple ways to solve a system of linear equations. ") +
-                          i18n.tr("In Switch you will use <a href='https://en.wikipedia.org/wiki/Gaussian_elimination'>Gaussian elimination</a>, also known as row reduction. ") +
-                          i18n.tr("Using the Gaussian elimination algorithm you can perform several actions on a matrix of coefficients. ") +
-                          i18n.tr("Those actions are called row operations. In Switch you are able to ... <br/>") +
-                          i18n.tr("... multiply a row by a number<br/>") +
-                          i18n.tr("... add one row to another<br/>") +
-                          i18n.tr("The goal of all this is to eliminate variables by setting the coefficient to zero. Remember our example: <br/>")
+                    text: i18n.tr("There are multiple ways to solve a system of linear equations.") + " " +
+                          i18n.tr("In Switch you will use <a href='https://en.wikipedia.org/wiki/Gaussian_elimination'>Gaussian elimination</a>, also known as row reduction.") + " " +
+                          i18n.tr("Using the Gaussian elimination algorithm you can perform several actions on a matrix of coefficients.") + " " +
+                          i18n.tr("Those actions are called row operations. In Switch you are able to ...") + "<br/>" +
+                          i18n.tr("... multiply a row by a number") + "<br/>" +
+                          i18n.tr("... add one row to another") + "<br/>" +
+                          i18n.tr("The goal of all this is to eliminate variables by setting the coefficient to zero. Remember our example:") + "<br/>"
                     width: parent.width
                     wrapMode: Text.WordWrap
                     linkColor: UbuntuColors.orange
@@ -154,8 +154,8 @@ Item {
                 }
 
                 Label {
-                    text: i18n.tr("To solve this matrix, we would like to eliminate the x variable from the second row. ") +
-                          i18n.tr("To achieve this, we'll multiply the first row by -1 and add it to the second row. The result:<br/>")
+                    text: i18n.tr("To solve this matrix, we would like to eliminate the x variable from the second row.") + " " +
+                          i18n.tr("To achieve this, we'll multiply the first row by -1 and add it to the second row. The result:") + "<br/>"
                     width: parent.width
                     wrapMode: Text.WordWrap
                 }
@@ -169,9 +169,9 @@ Item {
                 }
 
                 Label {
-                    text: i18n.tr("In this simple case, this was the only step needed to solve the system. <br/>") +
-                          i18n.tr("Our matrix is transformed into upper <a href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a>, which means that all matix entries below the <a href='https://en.wikipedia.org/wiki/Main_diagonal'>main diagonal</a> are zero. ") +
-                          i18n.tr("We can now finish solving the matrix in your head:<br/>") +
+                    text: i18n.tr("In this simple case, this was the only step needed to solve the system.") +  "<br/>" +
+                          i18n.tr("Our matrix is transformed into upper <a href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a>, which means that all matix entries below the <a href='https://en.wikipedia.org/wiki/Main_diagonal'>main diagonal</a> are zero.") + " " +
+                          i18n.tr("We can now finish solving the matrix in your head:") + "<br/>" +
                           "1) -1x -1y = -3 <br/>" +
                           "2) -2y = -2 <br/>" +
                           i18n.tr("Therefore: x = 2, y = 1")
@@ -196,8 +196,8 @@ Item {
                 }
 
                 Label {
-                    text: i18n.tr(" ... until we end up with the so called reduced <a href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>. ") +
-                          i18n.tr("This means that in every row there is exactly one leading coefficient which is 1. ") +
+                    text: i18n.tr(" ... until we end up with the so called reduced <a href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a>.") + " " +
+                          i18n.tr("This means that in every row there is exactly one leading coefficient which is 1.") + " " +
                           i18n.tr("All other entries in the same column are 0.")
                     width: parent.width
                     wrapMode: Text.WordWrap
@@ -222,19 +222,19 @@ Item {
                 }
 
                 Label {
-                    text: i18n.tr("Row operations:<br/>") +
-                          i18n.tr("<u>Add:</u><br/>") +
-                          i18n.tr("• You can drag and drop a row onto another to add it<br/>") +
-                          i18n.tr("<u>Multiply</u><br/>") +
-                          i18n.tr("• Tap on a row to select it<br/>") +
-                          i18n.tr("• The multiply header will show<br/>") +
-                          i18n.tr("• Hold and move the slider increase/decrease the value of the mutliplicator, release to multiply<br/>")
+                    text: i18n.tr("Row operations:") + "<br/>" +
+                          ("<u>%1</u><br/>").arg(i18n.tr("Add")) +
+                          i18n.tr("• You can drag and drop a row onto another to add it") + "<br/>"
+                          ("<u></u>%1<br/>").arg(i18n.tr("Multiply")) +
+                          i18n.tr("• Tap on a row to select it") + "<br/>" +
+                          i18n.tr("• The multiply header will show") + "<br/>" +
+                          i18n.tr("• Hold and move the slider increase/decrease the value of the mutliplicator, release to multiply") + "<br/>"
                     width: parent.width
                     wrapMode: Text.WordWrap
                 }
 
                 Label {
-                    text: i18n.tr("In Switch, there are two ways to solve a matrix:<br/>")
+                    text: i18n.tr("In Switch, there are two ways to solve a matrix:") + "<br/>"
                     width: parent.width
                     wrapMode: Text.WordWrap
                 }
@@ -245,11 +245,11 @@ Item {
 
                     Label {
                         Layout.fillWidth: true
-                        text: i18n.tr("1. Transform the matrix into upper <a href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a> using the row operations. ") +
-                              i18n.tr("Click on the 'Solve' button when you think you know the solution.<br/>") +
-                              i18n.tr("⊕ time efficient for small matrices<br/>") +
-                              i18n.tr("⊕ train your mental arithmetic skills<br/>") +
-                              i18n.tr("⊖ difficult for bigger matrices<br/>") +
+                        text: i18n.tr("1. Transform the matrix into upper <a href='https://en.wikipedia.org/wiki/Triangular_matrix'>triangular form</a> using the row operations.") + " " +
+                              i18n.tr("Click on the 'Solve' button when you think you know the solution.") + "<br/>" +
+                              i18n.tr("⊕ time efficient for small matrices") + "<br/>" +
+                              i18n.tr("⊕ train your mental arithmetic skills") + "<br/>" +
+                              i18n.tr("⊖ difficult for bigger matrices") + "<br/>" +
                               i18n.tr("↳ recommended for smaller matrices")
                         width: parent.width
                         wrapMode: Text.WordWrap
@@ -269,10 +269,10 @@ Item {
 
                     Label {
                         Layout.fillWidth: true
-                        text: i18n.tr("2. Simplify the matrix as much as possible by using the row operations. ")+
-                              i18n.tr("You will end up with the so called reduced <a href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a> and Switch will detect that the matrix is solved.<br/>") +
-                              i18n.tr("⊕ easy on the brain (no need for mental arithmetic)<br/>") +
-                              i18n.tr("⊖ wastefully time consuming for smaller matrices<br/>") +
+                        text: i18n.tr("2. Simplify the matrix as much as possible by using the row operations.") + " " +
+                              i18n.tr("You will end up with the so called reduced <a href='https://en.wikipedia.org/wiki/Row_echelon_form'>row echelon form</a> and Switch will detect that the matrix is solved.") + "<br/>" +
+                              i18n.tr("⊕ easy on the brain (no need for mental arithmetic)") + "<br/>" +
+                              i18n.tr("⊖ wastefully time consuming for smaller matrices") + "<br/>" +
                               i18n.tr("↳ recommended for big matrices")
                         width: parent.width
                         wrapMode: Text.WordWrap
@@ -328,7 +328,7 @@ Item {
 
 
                 Label {
-                    text: i18n.tr("As soon as you think you got it, you can <a href='#'>check your solution</a>. ")+
+                    text: i18n.tr("As soon as you think you got it, you can <a href='#'>check your solution</a>.") + " " +
                           i18n.tr("Or, alternatively, simplify it to the very end and Switch will handle the rest.")
                     width: parent.width
                     wrapMode: Text.WordWrap
@@ -356,7 +356,7 @@ Item {
                 }
 
                 Label {
-                    text: i18n.tr("<u>Hint:</u> The variables in Switch are called X1, X2, X3 ... XN (e.g. instead of x, y, z). ") +
+                    text: i18n.tr("<u>Hint:</u> The variables in Switch are called X1, X2, X3 ... XN (e.g. instead of x, y, z).") + " " +
                           i18n.tr("The reason for this is simply that there will be more than just 3 variables in the game and this naming scheme is more consistent therefore.")
                     width: parent.width
                     wrapMode: Text.WordWrap
