@@ -56,7 +56,6 @@ QtObject {
 
     function determinant(matrix) {
         var matrixArr = matrix.slice();
-        console.log("Matrix", JSON.stringify(matrixArr));
 
         if(matrixArr.length === 1)
             return matrixArr[0][0];
@@ -76,7 +75,6 @@ QtObject {
                 minor[j].splice(0, 1);
             }
 
-            console.log("Minor", JSON.stringify(minor));
             result += sign * matrixArr[i][0] * determinant(minor);
             sign *= -1;
         }
@@ -121,7 +119,6 @@ QtObject {
                 currentRow[0]++;
         }
 
-        //console.log(JSON.stringify(possibleRows))
         console.log("Count of possible rows for given parameters:", possibleRows.length)
 
         shuffleArray(possibleRows)
@@ -129,8 +126,6 @@ QtObject {
         for (var i = 0; i < possibleRows.length; i++) {
             // Check if possibleRows[i] zeroes determinant
             var test = matrix.concat([possibleRows[i]])
-            //console.log(JSON.stringify(test));
-            //console.log(determinant(test));
             if(determinant(test) !== 0) {
                 matrix.push(possibleRows[i]);
             }
