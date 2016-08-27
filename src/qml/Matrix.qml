@@ -54,52 +54,100 @@ QtObject {
         return array;
     }
 
+    function determinant(matrix) {
+        var matrixArr = matrix.slice();
+        console.log("Matrix", JSON.stringify(matrixArr));
+
+        if(matrixArr.length === 1)
+            return matrixArr[0][0];
+        if(matrixArr.length === 2)
+            return matrixArr[0][0] * matrixArr[1][1] - matrixArr[0][1] * matrixArr[1][0];
+
+        var result = 0;
+        var sign = +1;
+        var minor;
+        for (var i = 0; i < matrixArr.length; i++) {
+            minor = [];
+            for (var ii in matrixArr) {
+                minor.push(matrixArr[ii].slice());
+            }
+            minor.splice(i, 1);
+            for (var j = 0; j < minor.length; j++) {
+                minor[j].splice(0, 1);
+            }
+
+            console.log("Minor", JSON.stringify(minor));
+            result += sign * matrixArr[i][0] * determinant(minor);
+            sign *= -1;
+        }
+        return result;
+    }
+
     function randomMatrix(solution, multiplierMax) {
+        var solutionCount = solution.length;
+        var min = -multiplierMax;
+        var max = multiplierMax;
+
+        console.log("Solution: %1".arg(JSON.stringify(solution)))
+
+        // All possible entry multipliers
+        var possibleRows = [];
+        var currentRow = [];
+        var lastRow = false;
+        for (var i = 0; i < solutionCount; i++)
+            currentRow[i] = min;
+        for (var idx=0; !lastRow; idx++) {
+            possibleRows[idx] = currentRow.slice();
+            currentRow[0]++;
+            for (var i = 0; i < solutionCount; i++) {
+                if(currentRow[i] > max) {
+                    if(i === solutionCount - 1) {
+                        lastRow = true;
+                        break;
+                    }
+
+                    currentRow[i] = min;
+                    currentRow[i+1]++;
+                } else {
+                    break;
+                }
+            }
+            var allZeros = true;
+            for (var i = 0; i < solutionCount; i++) {
+                if(currentRow[i] !== 0)
+                    allZeros = false;
+            }
+            if(allZeros)
+                currentRow[0]++;
+        }
+
+        //console.log(JSON.stringify(possibleRows))
+        console.log("Count of possible rows for given parameters:", possibleRows.length)
+
+        shuffleArray(possibleRows)
         var matrix = [];
-
-        // Generating a matrix of random multipliers
-        // Definitely not an optimal solution,
-        // but it works for this purpose
-        var mMatrix = [];
-        for (var i=0; i<solution.length; i++) {
-            var mRow = [];
-            for (var y=0; y<solution.length+1; y++) {
-                var randNum = randomInt(1, multiplierMax);
-                if (randNum === 0)
-                    randNum = 1;
-                if (i === y) {
-                    randNum *= -1;
-                }
-
-                if (i === solution.length-y)
-                    randNum *= 0;
-                mRow.push(randNum);
+        for (var i = 0; i < possibleRows.length; i++) {
+            // Check if possibleRows[i] zeroes determinant
+            var test = matrix.concat([possibleRows[i]])
+            //console.log(JSON.stringify(test));
+            //console.log(determinant(test));
+            if(determinant(test) !== 0) {
+                matrix.push(possibleRows[i]);
             }
-            mMatrix.push(mRow);
+            if(matrix.length >= solutionCount)
+                break;
         }
 
-        mMatrix = shuffleArray(mMatrix);
-
-        for (var r=0; r<solution.length; r++) {
-            var matrixRow = [];
-
-            var solutionMultiplier = mMatrix[r][r];
-            var solutionValue = solution[r] * solutionMultiplier;
-
-            for (var i=0; i<solution.length; i++) {
-                if (r == i)
-                    matrixRow.push(solutionMultiplier);
-                else {
-                    var currentSolution = solution[i];
-                    var multiplier = mMatrix[r][i];
-                    var num = multiplier * currentSolution;
-                    solutionValue += num;
-                    matrixRow.push(multiplier);
-                }
+        for (var i in matrix) {
+            var extension = 0;
+            var row = matrix[i];
+            for (var j in row) {
+                extension += row[j] * solution[i];
             }
-            matrixRow.push(solutionValue);
-            matrix.push(matrixRow);
+            row.push(extension);
         }
+
+        console.log("Extended matrix for equation:", JSON.stringify(matrix));
         return matrix;
     }
 
@@ -117,5 +165,4 @@ QtObject {
         }
         return newRow;
     }
-
 }
