@@ -3,6 +3,7 @@
  A simple game about solving matrices
 
 ## Credits
+* Many thanks to [Andrew Penkrat](https://github.com/aldrog) for his help and contribution ensuring Switch generates systems with one and only one solution 😉
 * Thanks to [Stuart Langridge](https://twitter.com/sil) for testing, design input and QA.
 * Thanks to [Sam Hewitt](http://samuelhewitt.com/) for creating the [Ubuntu Icon Resource Kit](https://github.com/snwh/ubuntu-icon-resource-kit) which was used to create the application icon.
 * Thanks to all translators [on Transifex](https://www.transifex.com/tim-sueberkrueb/switch/).
@@ -44,9 +45,9 @@ Attach a device and click the run button.
 
 ## License and Copyright
 
-Copyright © 2016 Tim Süberkrüb
+Copyright © 2016 Tim Süberkrüb and contributors
 
 This application is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
 See LICENSE for more information.
-
+See CONTRIBUTORS.md for a list of all contributors.

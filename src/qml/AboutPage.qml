@@ -59,6 +59,15 @@ Page {
                 }
 
                 Label {
+                    text: i18n.tr("Many thanks to <a href='%1'>Andrew Penkrat</a> for his help and contribution ensuring Switch generates systems with one and only one solution 😉.")
+                           .arg("https://github.com/aldrog")
+                    width: parent.width
+                    wrapMode: Text.WordWrap
+                    linkColor: UbuntuColors.orange
+                    onLinkActivated: Qt.openUrlExternally(link);
+                }
+
+                Label {
                     text: i18n.tr("Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and QA.").arg("https://twitter.com/sil")
                     width: parent.width
                     wrapMode: Text.WordWrap
