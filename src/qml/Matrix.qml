@@ -137,7 +137,7 @@ QtObject {
             var extension = 0;
             var row = matrix[i];
             for (var j in row) {
-                extension += row[j] * solution[i];
+                extension += row[j] * solution[j];
             }
             row.push(extension);
         }
