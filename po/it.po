@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-26 20:45+0000\n"
+"POT-Creation-Date: 2016-08-27 19:56+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Gabriele Martelli <gabrielemartelli@tiscali.it>, 2016\n"
 "Language-Team: Italian (https://www.transifex.com/tim-sueberkrueb/"
@@ -35,12 +35,19 @@ msgstr "Crediti"
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:62
 #, qt-format
 msgid ""
+"Many thanks to <a href='%1'>Andrew Penkrat</a> for his help and contribution "
+"ensuring Switch generates systems with one and only one solution 😉."
+msgstr ""
+
+#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:71
+#, qt-format
+msgid ""
 "Thanks to <a href='%1'>Stuart Langridge</a> for testing, design input and QA."
 msgstr ""
 "Grazie a <a href='%1'>Stuart Langridge</a> per le prove, i suggerimenti per "
 "la grafica ed i controlli di qualità."
 
-#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:70
+#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:79
 #, qt-format
 msgid ""
 "Thanks to <a href='%1'>Sam Hewitt</a> for creating the <a href='%2'>Ubuntu "
@@ -49,25 +56,25 @@ msgstr ""
 "Grazie a <a href='%1'>Sam Hewitt</a> per aver creato <a href='%2'>Ubuntu "
 "Icon Resource Kit</a> che ho usato per creare l'icona dell'applicazione."
 
-#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:80
+#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:89
 msgid "License and Copyright"
 msgstr "Licenza e Copyright"
 
-#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:85
+#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:94
 #, qt-format
 msgid "Source code available on <a href='%1'>GitHub</a>."
 msgstr "Codice sorgente disponibile su <a href='%1'>GitHub</a>."
 
-#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:105
+#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:114
 #: /home/tim/Dev/Projects/switch/src/qml/GameCompletedOverlay.qml:62
 msgid "Rate"
 msgstr "Valuta"
 
-#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:113
+#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:122
 msgid "Report bug"
 msgstr "Segnala errori"
 
-#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:121
+#: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:130
 msgid "Contribute"
 msgstr "Contribuisci"
 
