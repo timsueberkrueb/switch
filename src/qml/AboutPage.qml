@@ -33,7 +33,7 @@ Page {
 
                 Label {
                     anchors.horizontalCenter: parent.horizontalCenter
-                    text: "Switch v0.1.6"
+                    text: "Switch v0.1.7"
                     fontSize: "large"
                 }
 
