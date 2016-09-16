@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-27 20:53+0000\n"
+"POT-Creation-Date: 2016-09-16 15:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Gabriele Martelli <gabrielemartelli@tiscali.it>, 2016\n"
 "Language-Team: Italian (https://www.transifex.com/tim-sueberkrueb/"
@@ -38,6 +38,8 @@ msgid ""
 "Many thanks to <a href='%1'>Andrew Penkrat</a> for his help and contribution "
 "ensuring Switch generates systems with one and only one solution 😉."
 msgstr ""
+"Molte grazie a <a href='%1'>Andrew Penkrat</a> per il suo aiuto ed il "
+"contributo affinchè Switch generi sistemi con una ed una sola soluzione 😉."
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:71
 #, qt-format
@@ -205,11 +207,11 @@ msgstr "Mostrami il tutorial"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:8
 msgid "Spoon boy"
-msgstr "Bimbo con cucchiai"
+msgstr "Bimbo & cucchiaio"
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:9
 msgid "There is no spoon."
-msgstr "Non c'è il cucchiaio"
+msgstr "Il cucchiaio non esiste."
 
 #: /home/tim/Dev/Projects/switch/src/qml/LevelModel.qml:17
 msgid "Mouse"
@@ -373,7 +375,7 @@ msgstr "Soluzione: %1"
 #: /home/tim/Dev/Projects/switch/src/qml/SuccessOverlay.qml:44
 #, qt-format
 msgid "Solve %1 more to complete the level."
-msgstr "Risolvi più di %1 per completare il livello."
+msgstr "Risolvine ancora %1 per completare il livello."
 
 #: /home/tim/Dev/Projects/switch/src/qml/SuccessOverlay.qml:52
 #, qt-format
@@ -386,7 +388,7 @@ msgstr "Tutorial"
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:14
 msgid "Hey! Welcome to Switch."
-msgstr "Hey! benvenuto in Switch."
+msgstr "Hey! Benvenuto in Switch."
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:29
 msgid ""

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-08-27 20:53+0000\n"
+"POT-Creation-Date: 2016-09-16 15:21+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Tim Süberkrüb <tim.sueberkrueb@gmail.com>, 2016\n"
 "Language-Team: German (https://www.transifex.com/tim-sueberkrueb/teams/66307/"
@@ -38,6 +38,9 @@ msgid ""
 "Many thanks to <a href='%1'>Andrew Penkrat</a> for his help and contribution "
 "ensuring Switch generates systems with one and only one solution 😉."
 msgstr ""
+"Vielen Dank an <a href='%1'>Andrew Penkrat</a> für seine Hilfe und seinen "
+"Beitrag, damit Switch nur Gleichungssysteme mit einer und wirklich nur einer "
+"Lösung generiert 😉."
 
 #: /home/tim/Dev/Projects/switch/src/qml/AboutPage.qml:71
 #, qt-format
@@ -472,7 +475,7 @@ msgid ""
 "Gaussian_elimination'>Gaussian elimination</a>, also known as row reduction."
 msgstr ""
 "In Switch wirst du das <a href='https://de.wikipedia.org/wiki/Gau"
-"%C3%9Fsches_Eliminationsverfahren'>Gaußsches Eliminationsverfahren</a> oder "
+"%C3%9Fsches_Eliminationsverfahren'>Gaußsche Eliminationsverfahren</a> oder "
 "kurz Gauß-Verfahren anwenden. "
 
 #: /home/tim/Dev/Projects/switch/src/qml/TutorialSections.qml:137
